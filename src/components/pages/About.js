@@ -3,7 +3,7 @@ import img11 from "../images/img11.png";
 import img3 from "../images/img3.png";
 import img8 from "../images/img8.png";
 import desktop from "../images/desktop.png";
-import Vision from "./Vision";
+import Vision from "../Vision";
 
 export default function About() {
   return (

@@ -1,11 +1,11 @@
 import React from "react";
-import img20 from "../images/img20.png";
-import img17 from "../images/img17.png";
-import img18 from "../images/img18.png";
-import img19 from "../images/img19.png";
-import img8 from "../images/img8.png";
-import img12 from "../images/img12.png";
-import img6 from "../images/img6.png";
+import img20 from "./images/img20.png";
+import img17 from "./images/img17.png";
+import img18 from "./images/img18.png";
+import img19 from "./images/img19.png";
+import img8 from "./images/img8.png";
+import img12 from "./images/img12.png";
+import img6 from "./images/img6.png";
 
 export default function Vision() {
   return (
@@ -59,6 +59,18 @@ export default function Vision() {
                       </p>
                     </div>
                   </div>
+                  <div className="line">
+                    <p
+                      style={{
+                        fontWeight: "700",
+                        width: "100%",
+                        fontSize: "20px",
+                      }}
+                    >
+                      EmpowerWIT is the shot of technical dose of adrenaline
+                      women of tomorrow needs
+                    </p>
+                  </div>
                 </div>
                 <div className="col-md-6">
                   <div className="vision-img">
@@ -68,14 +80,6 @@ export default function Vision() {
                     <img src={img6} alt="" className="idea-img" />
                   </div>
                 </div>
-              </div>
-              <div className="line">
-                <p
-                  style={{ fontWeight: "700", width: "55%", fontSize: "20px" }}
-                >
-                  EmpowerWIT is the shot of technical dose of adrenaline women
-                  of tomorrow needs
-                </p>
               </div>
             </div>
           </div>
