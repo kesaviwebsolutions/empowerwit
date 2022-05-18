@@ -14,8 +14,8 @@ export default function About() {
             <div className="row">
               <div className="col-md-4">
                 <div className="about-imgs">
-                  <img src={img3} alt="" className="wi" />
                   <img src={img11} alt="" className="about-img" />
+                  <img src={img3} alt="" className="wi" />
                 </div>
               </div>
               <div className="col-md-8">
