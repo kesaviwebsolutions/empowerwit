@@ -1,0 +1,25 @@
+/* NAVBAR */
+img.course-img {
+  max-width: 150px;
+}
+
+/* COURSES */
+.training-heading {
+  margin-left: 15px;
+}
+.training-area {
+  border-bottom: 1px solid;
+}
+.fliter-area {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+.btn-group {
+  margin-left: 10px;
+}
+.training-section {
+  padding: 19px 10px;
+  background-image: linear-gradient(#edcee3, #c3729d);
+}

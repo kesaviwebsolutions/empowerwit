@@ -1,6 +1,6 @@
 import React from "react";
 import img from "./images/img10.png";
-import bg1 from "./images/background.jpg";
+import bg1 from "./images/background_wt.png";
 export default function Navbar() {
   return (
     <div>
@@ -22,12 +22,13 @@ export default function Navbar() {
               <span className="navbar-toggler-icon"></span>
             </button>
             <div className="collapse navbar-collapse" id="navbarNav">
-              <ul
-                className="navbar-nav"
-                style={{ marginLeft: "auto", marginRight: "auto" }}
-              >
+              <ul className="navbar-nav m-auto">
                 <li className="nav-item">
-                  <a className="nav-link active" aria-current="page" href="#about-us">
+                  <a
+                    className="nav-link active"
+                    aria-current="page"
+                    href="#about-us"
+                  >
                     About
                   </a>
                 </li>
