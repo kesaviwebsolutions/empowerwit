@@ -1,6 +1,6 @@
 import React from "react";
 import Bottom from "./Bottom";
-import img5 from "./images/img5.png";
+import img5 from "./images/img.png";
 import img6 from "./images/img9.png";
 import About from "./pages/About";
 
