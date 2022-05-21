@@ -1,4 +1,5 @@
 import React from "react";
+import CourseCards from "../CourseCards";
 import NavCourse from "../NavCourse";
 
 export default function Courses() {
@@ -31,7 +32,7 @@ export default function Courses() {
         <button
           type="button"
           className="btn  dropdown-toggle"
-          style={{background:"#cccccc", borderRadius:"0px"}}
+          style={{ background: "#cccccc", borderRadius: "0px" }}
           data-bs-toggle="dropdown"
           aria-expanded="false"
         >
@@ -63,7 +64,7 @@ export default function Courses() {
               <div className="row">
                 <div className="col-md-6">
                   <div className="training-heading">
-                    <h1 style={{color:"#fff"}}>Trainings</h1>
+                    <h1 style={{ color: "#fff" }}>Trainings</h1>
                   </div>
                 </div>
                 <div className="col-md-6">
@@ -115,6 +116,7 @@ export default function Courses() {
                 </div>
               </div>
             </div>
+            <CourseCards />
           </div>
         </div>
       </section>

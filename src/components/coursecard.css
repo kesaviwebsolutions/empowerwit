@@ -1,0 +1,35 @@
+.icons {
+  position: absolute;
+  top: -22%;
+  left: 9%;
+  z-index: 1;
+}
+img.cardimg {
+  width: 30%;
+  background: #fff;
+  border-radius: 50px;
+  border: none;
+  z-index: 1;
+}
+.tesla {
+  position: absolute;
+  top: -8%;
+  right: 0;
+  background: #d44a73;
+  color: #fff;
+  width: 80%;
+  padding-left: 60px;
+}
+.duration {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* span.blkd {
+  position: absolute;
+  right: -38px;
+  top: 50%;
+  transform: rotate(270deg);
+  font-size: 50px;
+  color: #cccccc;
+} */
