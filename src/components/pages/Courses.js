@@ -32,7 +32,7 @@ export default function Courses() {
         <button
           type="button"
           className="btn  dropdown-toggle"
-          style={{ background: "#cccccc", borderRadius: "0px" }}
+          style={{ background: "#edcee3", borderRadius: "0px" }}
           data-bs-toggle="dropdown"
           aria-expanded="false"
         >

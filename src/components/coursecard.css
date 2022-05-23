@@ -1,35 +1,37 @@
-.icons {
-  position: absolute;
-  top: -22%;
-  left: 9%;
-  z-index: 1;
-}
-img.cardimg {
-  width: 30%;
+img.icon {
+  width: 28%;
   background: #fff;
   border-radius: 50px;
+  position: absolute;
+  top: -27%;
   border: none;
   z-index: 1;
 }
-.tesla {
+.active-icon {
   position: absolute;
-  top: -8%;
+  color: #2df22d;
+  right: 20px;
+  top: 10px;
+}
+.st {
+  top: -9%;
   right: 0;
-  background: #d44a73;
-  color: #fff;
+  padding-left: 50px;
   width: 80%;
-  padding-left: 60px;
+  background-color: #d44a73;
+  color: #fff;
+  position: absolute;
 }
 .duration {
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
-/* span.blkd {
-  position: absolute;
-  right: -38px;
-  top: 50%;
-  transform: rotate(270deg);
-  font-size: 50px;
-  color: #cccccc;
-} */
+.levels {
+  display: flex;
+}
+.level-item {
+  color: #fed3b2;
+}
+.level-items {
+  color: #cccc;
+}
