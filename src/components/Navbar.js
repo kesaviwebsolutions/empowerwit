@@ -1,6 +1,7 @@
 import React from "react";
 import img from "./images/img10.png";
 import bg1 from "./images/background_wt.png";
+
 export default function Navbar() {
   return (
     <div>

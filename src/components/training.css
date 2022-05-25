@@ -1,0 +1,59 @@
+.intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid;
+}
+.content-area {
+  padding: 40px 40px;
+  margin: 80px 80px;
+  background-color: #fff;
+  position: relative;
+}
+.video {
+  width: 90%;
+  margin-left: 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.playicon {
+  position: absolute;
+  top: 50%;
+  left: 72%;
+  color: #fff;
+  font-size: 50px;
+}
+.content {
+  margin-top: 30px;
+}
+.estimate {
+  display: flex;
+  justify-content: space-between;
+}
+img.ii {
+  width: 30%;
+  background-color: #fff;
+  border-radius: 50px;
+  border: none;
+}
+.img-text {
+  display: flex;
+  align-items: center;
+}
+.imgimg {
+  position: absolute;
+  top: -12%;
+  left: -23px;
+  z-index: 1;
+}
+.ST {
+  position: absolute;
+  top: -9%;
+  background: #d44a73;
+  padding-left: 65px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  color: #fff;
+  width: 100%;
+  right: 0;
+}
