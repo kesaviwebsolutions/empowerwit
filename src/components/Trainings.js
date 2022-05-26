@@ -4,6 +4,8 @@ import cardimg1 from './images/cardimg1.jpg'
 import icon from './images/icon_profil_3.png'
 import { BsPlayCircle, BsFillCircleFill } from 'react-icons/bs'
 import './training.css'
+import Slider from 'react-slick'
+import OtherCourses from './OtherCourses'
 
 export default function Trainings() {
   return (
@@ -16,7 +18,7 @@ export default function Trainings() {
             style={{ backgroundImage: 'linear-gradient(#edcee3, #c3729d)' }}
           >
             <div className="row">
-              <div className="col-md-9">
+              <div className="col-md-8">
                 <div className="content-area">
                   <div className="img-text">
                     <div className="imgimg">
@@ -81,7 +83,13 @@ export default function Trainings() {
                       </div>
                     </div>
                   </div>
+                  <div className="button-area">
+                    <button className="enroll">Enroll Now</button>
+                  </div>
                 </div>
+              </div>
+              <div className="col-md-4">
+               <OtherCourses/>
               </div>
             </div>
           </div>

@@ -26,7 +26,7 @@ export default function Main() {
                 </p>
               </div>
               <div className="explore-buttons">
-                <a href="/" className="btn">
+                <a href="/courses" className="btn">
                   Explore our trainings
                 </a>
               </div>

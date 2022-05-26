@@ -1,3 +1,6 @@
+/* @import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css"; */
+
 .intro {
   display: flex;
   justify-content: space-between;
@@ -6,9 +9,11 @@
 }
 .content-area {
   padding: 40px 40px;
-  margin: 80px 80px;
+  margin: 80px 60px;
   background-color: #fff;
   position: relative;
+  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 25px;
 }
 .video {
   width: 90%;
@@ -18,7 +23,7 @@
 }
 .playicon {
   position: absolute;
-  top: 50%;
+  top: 41%;
   left: 72%;
   color: #fff;
   font-size: 50px;
@@ -56,4 +61,17 @@ img.ii {
   color: #fff;
   width: 100%;
   right: 0;
+}
+button.enroll {
+  margin-top: 20px;
+  width: 200px;
+  padding: 14px;
+  font-size: 17px;
+  background-color: #d44a73;
+  color: #fff;
+  border: none;
+}
+button:hover {
+  color: #fff;
+  box-shadow: 0px 0px 9px 2px #d44a73;
 }

@@ -1,0 +1,45 @@
+.similar-sliders {
+  margin-top: 36px;
+  background: #fff;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  padding-bottom: 10px;
+}
+.st-heading {
+  background: #d44a73;
+  color: #fff;
+  border-top-right-radius: 25px;
+}
+.waiting-icon {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  color: #fb8b03;
+}
+img.mentor-img {
+  position: absolute;
+  top: 35%;
+  left: 10px;
+  width: 20%;
+  border:2px solid;
+  background: #fff;
+  border-radius: 50px;
+  z-index: 1;
+}
+.mentor-name {
+  background: lightblue;
+  position: absolute;
+  top: 45%;
+  right: 0;
+  width: 85%;
+}
+.link-item{
+  font-size: 40px;
+  margin-left: 5px;
+  color: #d44a73;
+  transition: 0.5s;
+}
+.link-item:hover {
+  color:#d44a73;
+}
