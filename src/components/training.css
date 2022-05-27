@@ -70,6 +70,7 @@ button.enroll {
   background-color: #d44a73;
   color: #fff;
   border: none;
+  cursor: default !important;
 }
 button:hover {
   color: #fff;

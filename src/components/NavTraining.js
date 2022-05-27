@@ -1,6 +1,7 @@
 import React from 'react'
 import img7 from './images/img7.png'
 import './courses.css'
+import RegisterContent from './RegisterContent'
 
 export default function NavTraining() {
   return (
@@ -55,11 +56,43 @@ export default function NavTraining() {
                 >
                   Sign in
                 </div>
-                <div className="btn-register">Register</div>
+                <button
+                  type="button"
+                  className="btn btn-outline-secondary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  Register
+                </button>
               </div>
             </div>
           </div>
         </nav>
+        {/* MODAL */}
+        <div
+          className="modal fade"
+          id="exampleModal"
+          tabIndex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div className="modal-dialog modal-dialog-centered">
+            <div className="modal-content">
+              <div className="modal-header">
+                <h5 className="modal-title" id="exampleModalLabel">
+                  Modal title
+                </h5>
+                <button
+                  type="button"
+                  className="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div className="modal-body"><RegisterContent/></div>
+            </div>
+          </div>
+        </div>
       </section>
     </div>
   )

@@ -21,17 +21,6 @@ li.nav-item {
   margin-left: 50px;
   margin-right: -35px;
 }
-.btn-register {
-  border: 1px solid;
-  margin-right: 10px;
-  cursor: default;
-  padding: 8px 20px;
-  transition: 0.5s;
-}
-.btn-register:hover {
-  background-color: #554c4c;
-  color: #fff;
-}
 
 /* HERO */
 .hero-img {
