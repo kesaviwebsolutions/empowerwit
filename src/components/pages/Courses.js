@@ -3,56 +3,7 @@ import CourseCards from "../CourseCards";
 import NavCourse from "../NavCourse";
 
 export default function Courses() {
-  const fliterInfo = [
-    {
-      subject: "Subject",
-      action: "Action",
-      action2: "Another Action",
-    },
-    {
-      subject: "Level",
-      action: "Action",
-      action2: "Another Action",
-    },
-    {
-      subject: "Language",
-      action: "Action",
-      action2: "Another Action",
-    },
-    {
-      subject: "Availability",
-      action: "Action",
-      action2: "Another Action",
-    },
-  ];
 
-  const renderFilter = (fliterInfo, index) => {
-    return (
-      <div className="btn-group" key={index}>
-        <button
-          type="button"
-          className="btn  dropdown-toggle"
-          style={{ background: "#edcee3", borderRadius: "0px" }}
-          data-bs-toggle="dropdown"
-          aria-expanded="false"
-        >
-          {fliterInfo.subject}
-        </button>
-        <ul className="dropdown-menu">
-          <li>
-            <a className="dropdown-item" href="/">
-              {fliterInfo.action}
-            </a>
-          </li>
-          <li>
-            <a className="dropdown-item" href="/">
-              {fliterInfo.action2}
-            </a>
-          </li>
-        </ul>
-      </div>
-    );
-  };
 
   return (
     <div>
@@ -100,20 +51,10 @@ export default function Courses() {
               <div className="row">
                 <div className="col-md-9">
                   <div className="fliter-area">
-                    <div className="fliter-heading">
-                      <h5>Fliters</h5>
-                    </div>
-                    <div className="fliter-content d-flex">
-                      {" "}
-                      {fliterInfo.map(renderFilter)}
-                    </div>
+                   
                   </div>
                 </div>
-                <div className="col-md-3">
-                  <div className="result-span">
-                    <span className="rs">18 results on Empowerwit</span>
-                  </div>
-                </div>
+            
               </div>
             </div>
             <CourseCards />
