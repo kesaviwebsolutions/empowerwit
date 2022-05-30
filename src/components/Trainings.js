@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import NavTraining from './NavTraining'
-import {  BsFillCircleFill } from 'react-icons/bs'
+import { BsFillCircleFill } from 'react-icons/bs'
 import './training.css'
-import Slider from 'react-slick'
 import OtherCourses from './OtherCourses'
 import { useParams } from 'react-router-dom'
 import Client from '../Client'
@@ -109,9 +108,6 @@ export default function Trainings() {
                       </div>
                     </div>
                     <div className="col-md-6">
-                      {/* <div className="playicon">
-                        <BsPlayCircle />
-                      </div> */}
                       <div className="video-area">
                         <iframe
                           src={`https://www.youtube.com/embed/${cardContent.link}`}

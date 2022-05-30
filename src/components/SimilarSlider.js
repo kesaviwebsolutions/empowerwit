@@ -1,19 +1,17 @@
 import React, { useState, useEffect } from 'react'
 import { BsFillCircleFill } from 'react-icons/bs'
-// import cardimg1 from './images/cardimg1.jpg'
-// import cardimg2 from './images/cardimg2.jpg'
-// import icon3 from './images/icon_profil_2.png'
-// import icon2 from './images/icon_profil_2.png'
-// import icon1 from './images/icon_profil_2.png'
+import { useParams } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import Slider from 'react-slick'
 import Client from '../Client'
 
 export default function SimilarSlider() {
   const [similarCards, setSimilarCards] = useState()
+  const { slug } = useParams()
 
   useEffect(() => {
     Client.fetch(
-      `*[_type == "similarCards"] {
+      `*[_type == "cards"] {
       mainImage{
         asset ->{
           _id,
@@ -38,7 +36,8 @@ export default function SimilarSlider() {
       .then((data) => setSimilarCards(data))
       .catch(console.error)
   }, [])
-  console.log(similarCards)
+
+
   return (
     <div>
       <div className="similar-sliders">
@@ -56,14 +55,14 @@ export default function SimilarSlider() {
             similarCards.map((similarCards, index) => (
               <div
                 key={index}
-                className="card"
+                className={window.location.pathname.includes(similarCards.slug.current) === false ? "card d-block" : "d-none"}
                 style={{
                   width: '21rem',
-                  display: 'block',
                   borderRadius: '25px',
                   border: '1px solid',
                 }}
               >
+                {console.log(window.location.pathname.includes(similarCards.slug.current))}
                 <div className="waiting-icon">
                   <BsFillCircleFill />
                 </div>
@@ -97,17 +96,22 @@ export default function SimilarSlider() {
                   </span>
                 </div>
                 <div className="card-body">
-                  <p className="card-title">
-                    <h3
-                      style={{
-                        fontSize: '20px',
-                        color: '#d44a73',
-                        marginTop: '20px',
-                      }}
+                  <div className="card-title">
+                    <Link
+                      to={{ pathname: `/tarining-area/${similarCards.slug.current}` }}
+                      style={{ textDecoration: 'none' }}
                     >
-                      {similarCards.title}
-                    </h3>
-                  </p>
+                      <h3
+                        style={{
+                          fontSize: '20px',
+                          color: '#d44a73',
+                          marginTop: '20px',
+                        }}
+                      >
+                        {similarCards.title}
+                      </h3>
+                    </Link>
+                  </div>
                   <div className="duration">
                     <div className="duration-time">
                       <b>{similarCards.duration}</b>{' '}

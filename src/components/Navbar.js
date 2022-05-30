@@ -3,6 +3,7 @@ import img from './images/img10.png'
 import bg1 from './images/ewit_background2.png'
 import RegisterContent from './RegisterContent'
 import ContactUs from './ContactUs'
+import { Link } from 'react-router-dom'
 
 export default function Navbar() {
   return (
@@ -51,9 +52,9 @@ export default function Navbar() {
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link active" href="/courses">
+                  <Link className="nav-link active" href="/courses">
                     Courses
-                  </a>
+                  </Link>
                 </li>
               </ul>
 
@@ -61,7 +62,7 @@ export default function Navbar() {
                 <div
                   className="btn-sign"
                   style={{
-                    marginTop:"0px",
+                    marginTop: "0px",
                     marginRight: '10px',
                     cursor: 'default',
                   }}

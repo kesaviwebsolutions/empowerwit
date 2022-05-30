@@ -2,6 +2,7 @@ import React from 'react'
 import img7 from './images/img7.png'
 import './courses.css'
 import RegisterContent from './RegisterContent'
+import { Link } from 'react-router-dom'
 
 export default function NavTraining() {
   return (
@@ -26,7 +27,7 @@ export default function NavTraining() {
             <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
               <ul className="navbar-nav m-auto">
                 <li className="nav-item">
-                  <a
+                  <Link
                     className="nav-link active"
                     aria-current="page"
                     href="/courses"
@@ -37,7 +38,7 @@ export default function NavTraining() {
                     }}
                   >
                     BACK TO COURSES
-                  </a>
+                  </Link>
                 </li>
               </ul>
 
@@ -89,7 +90,7 @@ export default function NavTraining() {
                   aria-label="Close"
                 ></button>
               </div>
-              <div className="modal-body"><RegisterContent/></div>
+              <div className="modal-body"><RegisterContent /></div>
             </div>
           </div>
         </div>
