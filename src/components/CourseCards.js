@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import Client from '../Client'
 import { BsFillRecordFill } from 'react-icons/bs'
 import './coursecard.css'
+import { Link } from 'react-router-dom'
 
 export default function CourseCards() {
   const [cards, setCards] = useState()
@@ -22,7 +23,6 @@ export default function CourseCards() {
         },
         alt, 
        },
-       logo,
        mentor,
        title,
        description,
@@ -50,10 +50,10 @@ export default function CourseCards() {
                     width: '18rem',
                     padding: '0px',
                     border: 'none',
-                    marginTop: '20px',
+                    marginTop: '50px',
                     borderRadius: '25px',
                     marginRight: '40px',
-                    marginLeft: '30px',
+                    marginLeft: '80px',
                   }}
                 >
                   {cards.mainImage && cards.mainImage.asset && (
@@ -73,20 +73,31 @@ export default function CourseCards() {
                     <BsFillRecordFill />
                   </div>
                   <div className="card-body position-relative">
-                  {cards.mainImage && cards.mainImage.asset && (
-                    <img src={cards.mainImage2.asset.url} alt="" className="icon" />
-                  )}
+                    {cards.mainImage && cards.mainImage.asset && (
+                      <img
+                        src={cards.mainImage2.asset.url}
+                        alt=""
+                        className="icon"
+                      />
+                    )}
 
-                  
                     <div className="tesla">
                       <span className="st">{cards.mentor}</span>
                     </div>
-                    <h5 style={{ color: '#d44a73', marginTop: '20px' }}>
-                      {cards.title}
-                    </h5>
-                    <p className="card-text" style={{ fontSize: '14px' }}>
-                      {cards.description}
-                    </p>
+                    <Link
+                      to={{ pathname: `/tarining-area/${cards.slug.current}` }}
+                      style={{ textDecoration: 'none' }}
+                    >
+                      <h5 style={{ color: '#d44a73', marginTop: '20px' }}>
+                        {cards.title}
+                      </h5>
+                      <p
+                        className="card-text"
+                        style={{ fontSize: '14px', color: 'black' }}
+                      >
+                        {cards.description}
+                      </p>
+                    </Link>
                     <div className="duration">
                       <div className="duration-time">
                         <b>{cards.duration}</b>{' '}

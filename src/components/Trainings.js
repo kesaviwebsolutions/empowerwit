@@ -1,13 +1,46 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import NavTraining from './NavTraining'
-import cardimg1 from './images/cardimg1.jpg'
-import icon from './images/icon_profil_3.png'
-import { BsPlayCircle, BsFillCircleFill } from 'react-icons/bs'
+import {  BsFillCircleFill } from 'react-icons/bs'
 import './training.css'
 import Slider from 'react-slick'
 import OtherCourses from './OtherCourses'
+import { useParams } from 'react-router-dom'
+import Client from '../Client'
 
 export default function Trainings() {
+  const [cardContent, setCardContent] = useState([])
+  const { slug } = useParams()
+
+  useEffect(() => {
+    Client.fetch(
+      `*[slug.current == "${slug}"] {
+        mainImage{
+        asset ->{
+          _id,
+          url
+        },
+        alt, 
+       },
+       mainImage2{
+        asset ->{
+          _id,
+          url
+        },
+        alt, 
+       },
+       link,
+       mentor,
+       title,
+       description,
+       duration,
+       time,
+       slug
+      }`,
+    )
+      .then((data) => setCardContent(data[0]))
+      .catch(console.error)
+  }, [slug])
+  console.log(cardContent)
   return (
     <div>
       <NavTraining />
@@ -22,16 +55,20 @@ export default function Trainings() {
                 <div className="content-area">
                   <div className="img-text">
                     <div className="imgimg">
-                      <img src={icon} alt="" className="ii" />
+                      {cardContent.mainImage2 && cardContent.mainImage2.asset && (
+                        <img
+                          src={cardContent.mainImage2.asset.url}
+                          alt=""
+                          className="ii"
+                        />
+                      )}
                     </div>
                     <div className="ST">
-                      <span className="sst">Sadie Tesla</span>
+                      <span className="sst">{cardContent.mentor}</span>
                     </div>
                   </div>
                   <div className="intro">
-                    <h3 style={{ width: '45%' }}>
-                      Introduction to Blockchain technology
-                    </h3>
+                    <h3 style={{ width: '47%' }}>{cardContent.title}</h3>
                     <span
                       className="available"
                       style={{
@@ -47,20 +84,17 @@ export default function Trainings() {
                   <div className="row" style={{ borderBottom: '1px solid' }}>
                     <div className="col-md-6">
                       <div className="content">
-                        <p>
-                          In this course we will discuss the limitations of the
-                          Internet for business and economic activity, and
-                          explain how blockchain technology represents the way
-                          forward.
-                        </p>
+                        <p>{cardContent.description}</p>
                       </div>
                       <div className="lang" style={{ marginTop: '85px' }}>
-                        <b>Language</b> <span>- English</span>
+                        <b>{cardContent.language}</b>{' '}
+                        <span>{cardContent.langName}</span>
                       </div>
                       <div className="estimate">
                         <div className="ed">
                           {' '}
-                          <b>Estimated duration</b> <span>- 5 hours</span>
+                          <b>{cardContent.duration}</b>{' '}
+                          <span>{cardContent.time}</span>
                         </div>
                         <div className="levels">
                           <div className="level-item">
@@ -75,11 +109,16 @@ export default function Trainings() {
                       </div>
                     </div>
                     <div className="col-md-6">
-                      <div className="playicon">
+                      {/* <div className="playicon">
                         <BsPlayCircle />
-                      </div>
+                      </div> */}
                       <div className="video-area">
-                        <img src={cardimg1} alt="" className="video" />
+                        <iframe
+                          src={`https://www.youtube.com/embed/${cardContent.link}`}
+                          frameBorder="0"
+                          title="intro"
+                          className="video"
+                        ></iframe>
                       </div>
                     </div>
                   </div>
@@ -89,7 +128,7 @@ export default function Trainings() {
                 </div>
               </div>
               <div className="col-md-4">
-               <OtherCourses/>
+                <OtherCourses />
               </div>
             </div>
           </div>

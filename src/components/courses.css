@@ -8,7 +8,7 @@ img.course-img {
   margin-left: 15px;
 }
 .training-area {
-  border-bottom: 1px solid;
+  border-bottom: 4px solid #fff;
 }
 .fliter-area {
   display: flex;
