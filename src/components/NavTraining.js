@@ -2,7 +2,7 @@ import React from 'react'
 import img7 from './images/img7.png'
 import './courses.css'
 import RegisterContent from './RegisterContent'
-import { Link } from 'react-router-dom'
+import { FaTelegram } from 'react-icons/fa'
 
 export default function NavTraining() {
   return (
@@ -27,7 +27,7 @@ export default function NavTraining() {
             <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
               <ul className="navbar-nav m-auto">
                 <li className="nav-item">
-                  <Link
+                  <a
                     className="nav-link active"
                     aria-current="page"
                     href="/courses"
@@ -38,7 +38,7 @@ export default function NavTraining() {
                     }}
                   >
                     BACK TO COURSES
-                  </Link>
+                  </a>
                 </li>
               </ul>
 
@@ -46,16 +46,15 @@ export default function NavTraining() {
                 <div
                   className="btn-sign"
                   style={{
-                    border: 'none',
-                    background: '#554c4c',
-                    color: '#fff',
-                    maxWidth: '100px',
-                    padding: '8px 20px',
-                    marginRight: '10px',
-                    cursor: 'default',
+                    marginTop: '5px',
+                    marginRight: '20px',
+                    cursor: 'pointer',
                   }}
                 >
-                  Sign in
+                  <a href="/" target="_blank" rel="noreferrer" style={{ color: '#6c757d' }}>
+                    {' '}
+                    <FaTelegram size={30} />
+                  </a>
                 </div>
                 <button
                   type="button"

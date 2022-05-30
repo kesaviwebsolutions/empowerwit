@@ -35,31 +35,87 @@ export default function RegisterContent() {
           method="POST"
         >
           <div className="col-md-6">
-            <label htmlFor="inputName4" className="form-label">
+            <label htmlhtmlFor="inputName4" className="form-label">
               First Name
             </label>
-            <input type="name" className="form-control" id="inputName4" />
+            <input
+              type="name"
+              className="form-control"
+              id="inputName4"
+              placeholder="first name"
+            />
           </div>
           <div className="col-md-6">
-            <label htmlFor="inputName4" className="form-label">
+            <label htmlhtmlFor="inputName4" className="form-label">
               Last Name
             </label>
-            <input type="name" className="form-control" id="inputName4" />
+            <input
+              type="name"
+              className="form-control"
+              id="inputName4"
+              placeholder="last name"
+            />
           </div>
           <div className="col-md-6">
-            <label htmlFor="inputEmail4" className="form-label">
+            <label htmlhtmlFor="inputEmail4" className="form-label">
               Email
             </label>
-            <input type="email" className="form-control" id="inputEmail4" />
+            <input
+              type="email"
+              className="form-control"
+              id="inputEmail4"
+              placeholder="email"
+            />
           </div>
           <div className="col-md-6">
-            <label htmlFor="inputNumber4" className="form-label">
+            <label htmlhtmlFor="inputNumber4" className="form-label">
               Phone Number
             </label>
-            <input type="tel" className="form-control" id="inputNumber4" />
+            <input
+              type="tel"
+              className="form-control"
+              id="inputNumber4"
+              placeholder="xxxxx-xxxxx"
+            />
+          </div>
+          <div className="col-md-12 d-flex justify-content-between">
+            <label htmlFor="">Gender</label>
+            <div className="form-check">
+              <input
+                className="form-check-input"
+                type="radio"
+                name="flexRadioDefault"
+                id="flexRadioDefault1"
+              />
+              <label className="form-check-label" htmlFor="flexRadioDefault1">
+                Female
+              </label>
+            </div>
+            <div className="form-check">
+              <input
+                className="form-check-input"
+                type="radio"
+                name="flexRadioDefault"
+                id="flexRadioDefault2"
+              />
+              <label className="form-check-label" htmlFor="flexRadioDefault2">
+                Others
+              </label>
+            </div>
+            <div className="form-check">
+              <input
+                className="form-check-input"
+                type="radio"
+                name="flexRadioDefault"
+                id="flexRadioDefault2"
+              />
+              <label className="form-check-label" htmlFor="flexRadioDefault2">
+                Male
+              </label>
+            </div>
           </div>
           <div className="col-12">
-            <label htmlFor="inputAddress" className="form-label">
+            <label htmlhtmlFor="inputAddress" className="form-label">
               Address
             </label>
             <input
@@ -70,7 +126,7 @@ export default function RegisterContent() {
             />
           </div>
           <div className="col-12">
-            <label htmlFor="inputAddress2" className="form-label">
+            <label htmlhtmlFor="inputAddress2" className="form-label">
               Address 2
             </label>
             <input
@@ -81,7 +137,57 @@ export default function RegisterContent() {
             />
           </div>
           <div className="col-md-6">
-            <label htmlFor="inputState" className="form-label">
+            <label htmlhtmlFor="inputAddress2" className="form-label">
+              Country
+            </label>
+            <input
+              type="text"
+              className="form-control"
+              id="inputCountry2"
+              placeholder="country"
+            />
+          </div>
+          <div className="col-md-6">
+            <label htmlhtmlFor="inputAddress2" className="form-label">
+              State
+            </label>
+            <input
+              type="text"
+              className="form-control"
+              id="inputState2"
+              placeholder="state"
+            />
+          </div>
+          <div className="col-md-6">
+            <label htmlhtmlFor="inputAddress2" className="form-label">
+              City
+            </label>
+            <input
+              type="text"
+              className="form-control"
+              id="inputCity2"
+              placeholder="city"
+            />
+          </div>
+          <div className="col-md-6">
+            <label htmlhtmlFor="inputAddress2" className="form-label">
+             Qualification
+            </label>
+            <input
+              type="text"
+              className="form-control"
+              id="inputQualification2"
+              placeholder="qualification"
+            />
+          </div>
+          <div className="col-md-12">
+            <label htmlhtmlFor="inputAddress2" className="form-label">
+              Photo
+            </label>
+            <input type="file" className="form-control" id="inputPhoto2" />
+          </div>
+          <div className="col-md-6">
+            <label htmlhtmlFor="inputState" className="form-label">
               Martial Status
             </label>
             <select id="inputState" className="form-select">
@@ -91,7 +197,7 @@ export default function RegisterContent() {
             </select>
           </div>
           <div className="col-md-6">
-            <label htmlFor="inputState" className="form-label">
+            <label htmlhtmlFor="inputState" className="form-label">
               Working Status
             </label>
             <select id="inputState" className="form-select">
@@ -100,7 +206,16 @@ export default function RegisterContent() {
               <option>Unemployeed</option>
             </select>
           </div>
-          <div className="col-12"></div>
+          <div className="col-12">
+            <label htmlhtmlFor="inputState" className="form-label">
+              Do you have computer/laptop
+            </label>
+            <select id="inputState" className="form-select">
+              <option>Choose...</option>
+              <option>Yes</option>
+              <option>No</option>
+            </select>
+          </div>
           <div className="col-12">
             <button type="submit" className="btn btn-primary">
               Register

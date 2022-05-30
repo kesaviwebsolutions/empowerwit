@@ -3,7 +3,8 @@ import img from './images/img10.png'
 import bg1 from './images/ewit_background2.png'
 import RegisterContent from './RegisterContent'
 import ContactUs from './ContactUs'
-import { Link } from 'react-router-dom'
+import { FaTelegram } from 'react-icons/fa'
+
 
 export default function Navbar() {
   return (
@@ -52,13 +53,10 @@ export default function Navbar() {
                   </a>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link active" href="/courses">
+                  <a className="nav-link active" href="/courses">
                     Courses
-                  </Link>
+                  </a>
                 </li>
-              </ul>
-
-              <div className="buttons d-flex">
                 <div
                   className="btn-sign"
                   style={{
@@ -67,12 +65,27 @@ export default function Navbar() {
                     cursor: 'default',
                   }}
                 >
-                  <button type="button" className="btn btn-secondary border border-0" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                    contact
+                  <button type="button" className="btn bg-transparent" data-bs-toggle="modal" data-bs-target="#staticBackdrop" style={{marginLeft:"50px"}}>
+                    Contact
                   </button>
 
                 </div>
+              </ul>
 
+              <div className="buttons d-flex">
+                <div
+                  className="btn-sign"
+                  style={{
+                    marginTop: '5px',
+                    marginRight: '20px',
+                    cursor: 'pointer',
+                  }}
+                >
+                  <a href="/" target="_blank" rel="noreferrer" style={{ color: '#6c757d' }}>
+                    {' '}
+                    <FaTelegram size={30} />
+                  </a>
+                </div>
                 <button
                   type="button"
                   className="btn btn-outline-secondary"
