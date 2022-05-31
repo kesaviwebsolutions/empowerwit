@@ -4,7 +4,6 @@ export default function ContactUs() {
   return (
     <div>
       <div className="container">
-        <h1 className="text-center">Contact Us</h1>
         <form
           target="_blank"
           action="https://formsubmit.co/el/momeha"

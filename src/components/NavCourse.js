@@ -3,6 +3,7 @@ import img7 from './images/img7.png'
 import './courses.css'
 import RegisterContent from './RegisterContent'
 import { FaTelegram } from 'react-icons/fa'
+import { Link } from 'react-router-dom'
 
 export default function NavCourse() {
   return (
@@ -27,10 +28,10 @@ export default function NavCourse() {
             <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
               <ul className="navbar-nav m-auto">
                 <li className="nav-item">
-                  <a
+                  <Link
                     className="nav-link active"
                     aria-current="page"
-                    href="/"
+                    to="/"
                     style={{
                       color: '#000000',
                       letterSpacing: '2px',
@@ -38,7 +39,7 @@ export default function NavCourse() {
                     }}
                   >
                     BACK TO HOMEPAGE
-                  </a>
+                  </Link>
                 </li>
               </ul>
 
@@ -52,7 +53,7 @@ export default function NavCourse() {
                     cursor: 'pointer',
                   }}
                 >
-                  <a href="/" target="_blank" rel="noreferrer" style={{color:'#6c757d'}}>
+                  <a href="https://t.me/EWiTAnnounce" target="_blank" rel="noreferrer" style={{color:'#6c757d'}}>
                     {' '}
                     <FaTelegram size={30} />
                   </a>
@@ -80,8 +81,8 @@ export default function NavCourse() {
           <div className="modal-dialog modal-dialog-centered">
             <div className="modal-content">
               <div className="modal-header">
-                <h5 className="modal-title" id="exampleModalLabel">
-                  Modal title
+                <h5 className="modal-title ms-auto" id="exampleModalLabel">
+                  Registration Form
                 </h5>
                 <button
                   type="button"

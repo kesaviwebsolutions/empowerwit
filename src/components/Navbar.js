@@ -4,6 +4,7 @@ import bg1 from './images/ewit_background2.png'
 import RegisterContent from './RegisterContent'
 import ContactUs from './ContactUs'
 import { FaTelegram } from 'react-icons/fa'
+import { Link } from 'react-router-dom'
 
 
 export default function Navbar() {
@@ -53,9 +54,9 @@ export default function Navbar() {
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link active" href="/courses">
+                  <Link className="nav-link active" to="/courses">
                     Courses
-                  </a>
+                  </Link>
                 </li>
                 <div
                   className="btn-sign"
@@ -65,7 +66,7 @@ export default function Navbar() {
                     cursor: 'default',
                   }}
                 >
-                  <button type="button" className="btn bg-transparent" data-bs-toggle="modal" data-bs-target="#staticBackdrop" style={{marginLeft:"50px"}}>
+                  <button type="button" className="btn bg-transparent" data-bs-toggle="modal" data-bs-target="#staticBackdrop" style={{ marginLeft: "50px" }}>
                     Contact
                   </button>
 
@@ -81,7 +82,7 @@ export default function Navbar() {
                     cursor: 'pointer',
                   }}
                 >
-                  <a href="/" target="_blank" rel="noreferrer" style={{ color: '#6c757d' }}>
+                  <a href="https://t.me/EWiTAnnounce" target="_blank" rel="noreferrer" style={{ color: '#6c757d' }}>
                     {' '}
                     <FaTelegram size={30} />
                   </a>
@@ -112,7 +113,7 @@ export default function Navbar() {
           <div className="modal-dialog modal-dialog-centered">
             <div className="modal-content">
               <div className="modal-header">
-                <h5 className="modal-title ms-auto" id="exampleModalLabel" style={{ letterSpacing: "1px", fontSize: "20px" }}>
+                <h5 className="modal-title ms-auto" id="exampleModalLabel">
                   Registration Form
                 </h5>
                 <button
@@ -131,6 +132,9 @@ export default function Navbar() {
           <div className="modal-dialog">
             <div className="modal-content">
               <div className="modal-header">
+                <h5 className="modal-title ms-auto" id="exampleModalLabel">
+                  Contact Us
+                </h5>
                 <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div className="modal-body">

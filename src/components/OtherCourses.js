@@ -8,7 +8,7 @@ export default function OtherCourses() {
   return (
     <div>
       <section>
-        <div className="container" style={{ marginLeft: "-50px" }}>
+        <div className="container">
           <SimilarSlider />
           <div className="container">
             <div className="share-area">

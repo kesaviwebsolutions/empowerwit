@@ -6,7 +6,7 @@ import Slider from 'react-slick'
 import Client from '../Client'
 
 export default function SimilarSlider() {
-  const [similarCards, setSimilarCards] = useState()
+  const [similarCards, setSimilarCards] = useState([])
   const { slug } = useParams()
 
   useEffect(() => {
@@ -33,9 +33,20 @@ export default function SimilarSlider() {
        slug
     }`,
     )
-      .then((data) => setSimilarCards(data))
+      .then((data) => {
+        for (let index = 0; index < data.length; index++) {
+          if (window.location.pathname.includes(data[index].slug.current) === true) {
+            delete data[index]
+            console.log(data);
+            setSimilarCards(data)
+          }
+        }
+      })
       .catch(console.error)
+
   }, [])
+
+
 
 
   return (
@@ -55,7 +66,7 @@ export default function SimilarSlider() {
             similarCards.map((similarCards, index) => (
               <div
                 key={index}
-                className={window.location.pathname.includes(similarCards.slug.current) === false ? "card d-block" : "d-none"}
+                className="card"
                 style={{
                   width: '21rem',
                   borderRadius: '25px',
@@ -100,6 +111,7 @@ export default function SimilarSlider() {
                     <Link
                       to={{ pathname: `/tarining-area/${similarCards.slug.current}` }}
                       style={{ textDecoration: 'none' }}
+
                     >
                       <h3
                         style={{
@@ -109,6 +121,7 @@ export default function SimilarSlider() {
                         }}
                       >
                         {similarCards.title}
+
                       </h3>
                     </Link>
                   </div>

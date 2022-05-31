@@ -23,3 +23,7 @@ img.course-img {
   padding: 19px 10px;
   background-image: linear-gradient(#edcee3, #c3729d);
 }
+
+@media screen and (max-width: 480px) {
+
+}

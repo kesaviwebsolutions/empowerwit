@@ -39,22 +39,13 @@ export default function CourseCards() {
   return (
     <div>
       <section>
-        <div className="container">
+        <div className="homeCards container">
           <div className="row">
             {cards &&
               cards.map((cards, index) => (
                 <div
                   key={index}
                   className="card"
-                  style={{
-                    width: '18rem',
-                    padding: '0px',
-                    border: 'none',
-                    marginTop: '50px',
-                    borderRadius: '25px',
-                    marginRight: '40px',
-                    marginLeft: '80px',
-                  }}
                 >
                   {cards.mainImage && cards.mainImage.asset && (
                     <img
