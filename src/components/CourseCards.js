@@ -5,7 +5,7 @@ import './coursecard.css'
 import { Link } from 'react-router-dom'
 
 export default function CourseCards() {
-  const [cards, setCards] = useState()
+  const [cards, setCards] = useState([])
   useEffect(() => {
     Client.fetch(
       `*[_type == "cards"] {

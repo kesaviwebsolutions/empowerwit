@@ -117,7 +117,7 @@ export default function Trainings() {
                           <iframe
                             src={`https://www.youtube.com/embed/${cardContent.link}`}
                             frameBorder="0"
-                            title="intro"
+                            title="video"
                             className="video"
                           ></iframe>
                         </div>

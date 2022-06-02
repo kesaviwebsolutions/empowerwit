@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
 import Courses from "./components/pages/Courses";
 import Home from "./components/pages/Home";
@@ -8,11 +8,11 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <Switch>
-          <Route path="/" component={Home} exact></Route>
-          <Route path="/courses" component={Courses}></Route>
-          <Route path="/tarining-area/:slug" component={Trainings}></Route>
-        </Switch>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/courses" element={<Courses />} />
+          <Route path="/tarining-area/:slug" element={<Trainings />} />
+        </Routes>
       </Router>
     </div>
   );

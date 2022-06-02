@@ -1,6 +1,6 @@
 import React from 'react'
 import img14 from '../images/img14.png'
-import Timeline from '../Timeline'
+
 
 export default function Roadmap() {
   return (
@@ -19,7 +19,7 @@ export default function Roadmap() {
                   />
 
                 </div>
-                {/* <Timeline /> */}
+        
               </div>
             </div>
           </div>
