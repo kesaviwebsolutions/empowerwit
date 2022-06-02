@@ -19,7 +19,7 @@ export default function Roadmap() {
                   />
 
                 </div>
-                <Timeline />
+                {/* <Timeline /> */}
               </div>
             </div>
           </div>
