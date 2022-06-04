@@ -27,7 +27,7 @@ export default function About() {
                           <h2 style={{ color: "#0071BC", fontWeight: "700" }}>
                             Who are we ?
                           </h2>
-                          <p>
+                          <p style={{fontFamily:"Futura Lt BT"}}>
                             EmpowerWIT is a social movement aimed to empower
                             women/housewives by training them in the filed on
                             Information Technolgoy and equip them with skills to

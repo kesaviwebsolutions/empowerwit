@@ -1,0 +1,103 @@
+@media screen and (max-width: 768px) {
+  .mobile-background {
+    width: 100%;
+    overflow: hidden;
+    background-image: url('../Mobile/Images/mobile_background.png');
+  }
+  .mobile-background2 {
+    width: 100%;
+    overflow: hidden;
+    background-image: url('../Mobile/Images/mobile_background2.png');
+    margin-top: 50px;
+  }
+  .mobile-background3 {
+    width: 100%;
+    overflow: hidden;
+    background-image: url('../Mobile/Images/mobile_background3.png');
+    margin-top: 50px;
+  }
+  .mobile-background4 {
+    width: 100%;
+    overflow: hidden;
+    background-image: url('../Mobile/Images/mobile_background4.png');
+    margin-top: 50px;
+  }
+  .mobile-background5 {
+    width: 100%;
+    overflow: hidden;
+    background-image: url('../Mobile/Images/mobile_background5.png');
+    margin-top: 50px;
+  }
+  .mobile-background6 {
+    width: 100%;
+    overflow: hidden;
+    background-image: url('../Mobile/Images/mobile_background6.png');
+    margin-top: 50px;
+  }
+  .mi {
+    max-width: 300px;
+    display: block;
+    margin: auto;
+    padding-top: 100px;
+  }
+  .im {
+    max-width: 300px;
+    display: block;
+    margin-right: auto;
+    padding-top: 100px;
+    padding-left: 20px;
+  }
+  .tagline {
+    color: rgb(212, 74, 115);
+    margin-left: 196px;
+  }
+  img.mai {
+    max-width: 300px;
+    display: block;
+    margin: 50px auto;
+  }
+  .mvc {
+    display: flex;
+    align-items: center;
+  }
+  img.mvi {
+    max-width: 200px;
+    display: block;
+    margin: 50px auto;
+    padding-left: 30px;
+  }
+  img.miv {
+    max-width: 200px;
+    margin-top: 30px;
+  }
+  .mcv {
+    display: grid;
+  }
+  img.idea-img {
+    max-width: 300px;
+    display: block;
+    margin-left: auto;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .tagline {
+    color: rgb(212, 74, 115);
+    margin-left: 32px;
+  }
+  .mvc {
+    display: grid;
+  }
+  img.miv {
+    max-width: 167px;
+    margin-top: 50px;
+    padding-left: 10px;
+  }
+}
+
+@media screen and (max-width: 412px) {
+  .tagline {
+    color: rgb(212, 74, 115);
+    margin-left: 46px;
+  }
+}

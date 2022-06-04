@@ -30,32 +30,37 @@ export default function Navbar() {
             <div className="collapse navbar-collapse" id="navbarNav">
               <ul className="navbar-nav m-auto">
                 <li className="nav-item">
-                  <a
+                  <Link
                     className="nav-link active"
                     aria-current="page"
-                    href="#about-us"
+                    to="#about-us"
                   >
                     About
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link active" href="#trainings">
+                  <Link className="nav-link active" to="#trainings">
                     Trainings
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link active" href="#partners">
+                  <Link className="nav-link active" to="#partners">
                     Partners
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link active" href="#roadmap">
+                  <Link className="nav-link active" to="#roadmap">
                     Roadmap
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item">
                   <Link className="nav-link active" to="/courses">
                     Courses
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link className="nav-link active" to="/mobile">
+                    MobileView
                   </Link>
                 </li>
                 <div
@@ -66,7 +71,7 @@ export default function Navbar() {
                     cursor: 'default',
                   }}
                 >
-                  <button type="button" className="btn bg-transparent" data-bs-toggle="modal" data-bs-target="#staticBackdrop" style={{ marginLeft: "50px" }}>
+                  <button type="button" className="btn bg-transparent" data-bs-toggle="modal" data-bs-target="#staticBackdrop" style={{ marginLeft: "50px", fontFamily: 'Futura Lt BT', fontWeight: "700" }}>
                     Contact
                   </button>
 

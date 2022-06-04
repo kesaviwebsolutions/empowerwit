@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Bottom from "./Bottom";
 import img5 from "./images/img.png";
 import img6 from "./images/img9.png";
@@ -26,9 +27,9 @@ export default function Main() {
                 </p>
               </div>
               <div className="explore-buttons">
-                <a href="/courses" className="btn">
+                <Link to="/courses" className="btn">
                   Explore our trainings
-                </a>
+                </Link>
               </div>
             </div>
           </div>

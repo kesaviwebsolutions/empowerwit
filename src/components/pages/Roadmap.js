@@ -1,5 +1,6 @@
 import React from 'react'
 import img14 from '../images/img14.png'
+import Timeline from "../Timeline"
 
 
 export default function Roadmap() {
@@ -15,11 +16,11 @@ export default function Roadmap() {
                     src={img14}
                     alt=""
                     className="roadmap-img"
-                    style={{ width: '50%', marginTop: '100px' }}
+                    style={{ width: '40%', marginTop: '100px' }}
                   />
 
                 </div>
-        
+                <Timeline />
               </div>
             </div>
           </div>
