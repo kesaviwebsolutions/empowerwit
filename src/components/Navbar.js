@@ -4,7 +4,7 @@ import bg1 from './images/ewit_background2.png'
 import RegisterContent from './RegisterContent'
 import ContactUs from './ContactUs'
 import { FaTelegram } from 'react-icons/fa'
-import { Link } from 'react-router-dom'
+import { Nav } from 'react-bootstrap'
 
 
 export default function Navbar() {
@@ -30,38 +30,45 @@ export default function Navbar() {
             <div className="collapse navbar-collapse" id="navbarNav">
               <ul className="navbar-nav m-auto">
                 <li className="nav-item">
-                  <Link
+                  <Nav.Link href="#about-us"
                     className="nav-link active"
                     aria-current="page"
-                    to="#about-us"
                   >
                     About
-                  </Link>
+                  </Nav.Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link active" to="#trainings">
+                  <Nav.Link href="#trainings"
+                    className="nav-link active"
+                    aria-current="page"
+                  >
                     Trainings
-                  </Link>
+                  </Nav.Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link active" to="#partners">
+                  <Nav.Link href="#partners"
+                    className="nav-link active"
+                    aria-current="page"
+                  >
                     Partners
-                  </Link>
+                  </Nav.Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link active" to="#roadmap">
+                  <Nav.Link href="#roadmap"
+                    className="nav-link active"
+                    aria-current="page"
+                  >
                     Roadmap
-                  </Link>
+                  </Nav.Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link active" to="/courses">
+                  <Nav.Link href="/courses"
+                    className="nav-link active"
+                    aria-current="page"
+                  >
                     Courses
-                  </Link>
-                </li>
-                <li className="nav-item">
-                  <Link className="nav-link active" to="/mobile">
-                    MobileView
-                  </Link>
+                  </Nav.Link>
+
                 </li>
                 <div
                   className="btn-sign"

@@ -4,6 +4,7 @@ import img17 from './Images/img17.png'
 import img18 from './Images/img18.png'
 import img19 from './Images/img19.png'
 import img6 from './Images/img6.png'
+import MobileTarinings from './Mobilepages/MobileTarinings'
 
 export default function Mobilevision() {
   return (
@@ -93,6 +94,7 @@ export default function Mobilevision() {
           </div>
         </div>
       </div>
+      <MobileTarinings/>
     </div>
   )
 }

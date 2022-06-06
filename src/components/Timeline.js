@@ -1,6 +1,6 @@
 import React from "react"
 import { Chrono } from "react-chrono";
-import "./timeline.css"
+
 
 const Timeline = () => {
     const items = [{

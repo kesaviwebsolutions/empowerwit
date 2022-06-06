@@ -1,4 +1,13 @@
 @media screen and (max-width: 768px) {
+  .navbar-toggler {
+    padding: 0.25rem 0.75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    background-color: black !important;
+    border: 1px solid #fff;
+    border-radius: 0.25rem;
+    transition: box-shadow 0.15s ease-in-out;
+  }
   .mobile-background {
     width: 100%;
     overflow: hidden;
@@ -78,6 +87,60 @@
     display: block;
     margin-left: auto;
   }
+  .mt {
+    width: 60%;
+    margin-top: 20px;
+  }
+  .mobileexplore-button {
+    margin-top: -81px;
+    margin-left: 180px;
+    margin-bottom: 40px;
+  }
+  img.mbsc {
+    margin-left: 50px;
+    margin-top: 20px;
+  }
+  img.mcmc {
+    margin: 20px auto;
+    display: block;
+  }
+  .homeCards .card {
+    width: 18rem !important;
+    padding: 0px !important;
+    border: none;
+    margin-top: 50px !important;
+    border-radius: 25px;
+    display: block;
+    margin: auto;
+  }
+  a.mobileec.nav-link {
+    border: 1px solid #c3729d;
+    font-weight: 500;
+    color: #c3729d;
+    text-align: center;
+    font-size: 19px;
+    display: block;
+    max-width: 350px;
+    margin: auto;
+    padding: 15px;
+    border-radius: 25px;
+    background-color: #fff;
+  }
+  .css-12yy2iw-TimelineItemContentWrapper {
+    align-items: flex-start;
+    background: none !important;
+    border-radius: 4px;
+    display: flex;
+    filter: drop-shadow(0 0 3px rgba(0, 0, 0, 0.2));
+    flex-direction: column;
+    justify-content: flex-start;
+    line-height: 1.5em;
+    min-height: 200px;
+    position: relative;
+    text-align: left;
+    width: 98%;
+    z-index: 0;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -92,6 +155,11 @@
     max-width: 167px;
     margin-top: 50px;
     padding-left: 10px;
+  }
+  .mobileexplore-button {
+    margin-top: -66px;
+    margin-left: 97px;
+    margin-bottom: 40px;
   }
 }
 

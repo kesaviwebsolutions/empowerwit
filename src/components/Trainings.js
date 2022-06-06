@@ -68,7 +68,7 @@ export default function Trainings() {
                     </div>
                   </div>
                   <div className="intro">
-                    <h3 style={{ width: '47%', color:"#d44a73" }}>{cardContent.title}</h3>
+                    <h3 className="tt">{cardContent.title}</h3>
                     <span
                       className="available"
                       style={{
@@ -85,34 +85,11 @@ export default function Trainings() {
                     className="container"
                     style={{ borderBottom: '1px solid' }}
                   >
-                    <div className="row">
-                      <div className="col-md-6">
+                    <div className="col-md-12">
+                      <div className="tac">
                         <div className="content">
-                          <p>{cardContent.description}</p>
+                          <p className='cc-d'>{cardContent.description}</p>
                         </div>
-                        <div className="lang" style={{ marginTop: '85px' }}>
-                          <b>{cardContent.language}</b>{' '}
-                          <span>{cardContent.langName}</span>
-                        </div>
-                        <div className="estimate">
-                          <div className="ed">
-                            {' '}
-                            <b>{cardContent.duration}</b>{' '}
-                            <span>{cardContent.time}</span>
-                          </div>
-                          <div className="levels">
-                            <div className="level-item">
-                              <b style={{ color: '#000000' }}>Level</b>{' '}
-                              <BsFillCircleFill size={15} color="#fed3b2" />
-                            </div>
-                            <div className="level-items">
-                              <BsFillCircleFill size={15} color="#ccccc" />
-                              <BsFillCircleFill size={15} color="#ccccc" />
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="col-md-6">
                         <div className="video-area">
                           <iframe
                             src={`https://www.youtube.com/embed/${cardContent.link}`}
@@ -120,6 +97,27 @@ export default function Trainings() {
                             title="video"
                             className="video"
                           ></iframe>
+                        </div>
+                      </div>
+                      <div className="lang" style={{ marginTop: '30px' }}>
+                        <b>{cardContent.language}</b>{' '}
+                        <span>{cardContent.langName}</span>
+                      </div>
+                      <div className="estimate">
+                        <div className="ed">
+                          {' '}
+                          <b>{cardContent.duration}</b>{' '}
+                          <span>{cardContent.time}</span>
+                        </div>
+                        <div className="levels">
+                          <div className="level-item">
+                            <b style={{ color: '#000000' }}>Level</b>{' '}
+                            <BsFillCircleFill size={15} color="#fed3b2" />
+                          </div>
+                          <div className="level-items">
+                            <BsFillCircleFill size={15} color="#ccccc" />
+                            <BsFillCircleFill size={15} color="#ccccc" />
+                          </div>
                         </div>
                       </div>
                     </div>

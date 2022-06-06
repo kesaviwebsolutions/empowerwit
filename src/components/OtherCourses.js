@@ -12,7 +12,7 @@ export default function OtherCourses() {
           <SimilarSlider />
           <div className="container">
             <div className="share-area">
-              <h3 style={{ marginTop: "15px", borderBottom: "2px solid" }}>Share this training</h3>
+              <h3 style={{ marginTop: "15px", borderBottom: "2px solid", color:"#fff" }}>Share this training</h3>
             </div>
             <div className="social-links" style={{ marginTop: "-15px" }}>
               {/* <a href="/" className='link-item' target="_blank" rel="noreferrer"><FaLinkedin /></a> */}
@@ -20,7 +20,6 @@ export default function OtherCourses() {
               <a href="https://www.instagram.com/empowerwit2022/?igshid=YmMyMTA2M2Y" className='link-item' target="_blank" rel="noreferrer"><FaInstagramSquare /></a>
               <a href="https://twitter.com/EWIT_Official?t=KGqw1IpsFT9DIGxgytg6qg&s=09" className='link-item' target="_blank" rel="noreferrer"><FaTwitterSquare /></a>
               <a href="https://discord.com/invite/WwfnzEHx" className='link-item' target="_blank" rel="noreferrer"><BsDiscord /></a>
-
             </div>
           </div>
         </div>

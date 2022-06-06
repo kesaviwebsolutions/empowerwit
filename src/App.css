@@ -175,7 +175,8 @@ img.ai {
   margin-left: -127px;
 }
 img.ia {
-  width: 85%;
+  width: 80%;
+  margin-left: 50px;
 }
 .logos {
   position: absolute;
@@ -248,7 +249,7 @@ img.rmi {
   img.wi {
     width: 60%;
     margin-top: 140px;
-    margin-left: 5rem;
+    margin-left: -175px;
   }
   img.hero {
     width: 100%;
@@ -269,11 +270,16 @@ img.rmi {
     max-width: 970px;
     margin: 70px auto;
   }
+
   img.heading-img {
     width: 40%;
     margin-left: 30px;
     margin-top: 14px;
     margin-right: auto;
+  }
+  img.ia {
+    width: 100%;
+    margin-left: -19px;
   }
   .para-text {
     text-align: center;
@@ -292,9 +298,9 @@ img.rmi {
     margin-left: 30px;
   }
   img.wi {
-    width: 50%;
+    width: 60%;
     margin-top: 140px;
-    margin-left: 5rem;
+    margin-left: -175px;
   }
   img.partner {
     width: 100%;
@@ -341,6 +347,10 @@ img.rmi {
   .drawing-desktop {
     display: grid;
     margin-top: 100px;
+  }
+  li.nav-item {
+    margin-left: 0px;
+    margin-right: -35px;
   }
 }
 
