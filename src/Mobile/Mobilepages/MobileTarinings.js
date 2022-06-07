@@ -23,7 +23,7 @@ export default function MobileTarinings() {
                             style={{
                               color: '#0071BC',
                               paddingLeft: '20px',
-                              fontSize: '40px',
+                              fontSize: '30px',
                               fontWeight: '700',
                             }}
                           >
@@ -40,7 +40,7 @@ export default function MobileTarinings() {
                             style={{
                               color: '#0071BC',
                               paddingLeft: '20px',
-                              fontSize: '40px',
+                              fontSize: '30px',
                               fontWeight: '700',
                             }}
                           >
@@ -56,7 +56,7 @@ export default function MobileTarinings() {
                             style={{
                               color: '#0071BC',
                               paddingLeft: '20px',
-                              fontSize: '40px',
+                              fontSize: '30px',
                               fontWeight: '700',
                             }}
                           >
@@ -72,7 +72,7 @@ export default function MobileTarinings() {
                             style={{
                               color: '#0071BC',
                               paddingLeft: '20px',
-                              fontSize: '40px',
+                              fontSize: '30px',
                               fontWeight: '700',
                             }}
                           >
@@ -88,7 +88,7 @@ export default function MobileTarinings() {
                             style={{
                               color: '#0071BC',
                               paddingLeft: '20px',
-                              fontSize: '40px',
+                              fontSize: '30px',
                               fontWeight: '700',
                             }}
                           >
