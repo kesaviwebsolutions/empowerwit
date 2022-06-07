@@ -5,6 +5,7 @@ import './mobile.css'
 import Mobileabout from './Mobilepages/Mobileabout'
 import { Nav } from 'react-bootstrap'
 import MobileNav from './MobileNav'
+import { GiHamburgerMenu } from "react-icons/gi";
 
 export default function MobileMain() {
   return (
@@ -29,6 +30,28 @@ export default function MobileMain() {
                     <Nav.Link href="/courses" className="mobileec">
                       Explore our trainings
                     </Nav.Link>
+                    <div class="btn-group dropup">
+            <button type="button" className="btn btn-secondary dropdown-toggle burger" data-bs-toggle="dropdown" aria-expanded="false">
+            <GiHamburgerMenu/>
+            </button>
+            <ul class="dropdown-menu">
+            <li className="nav-item">
+                  <Nav.Link className="nav-link active menu" aria-current="page" href="#about-us">About</Nav.Link>
+                </li>
+                <li className="nav-item">
+                  <Nav.Link className="nav-link menu" href="#trainings">Training</Nav.Link>
+                </li>
+                <li className="nav-item">
+                  <Nav.Link className="nav-link menu" href="#partners">Partners</Nav.Link>
+                </li>
+                <li className="nav-item">
+                  <Nav.Link className="nav-link menu" href="#roadmap">Roadmap</Nav.Link>
+                </li>
+
+              
+             
+             </ul>
+                </div>
                   </div>
                 </div>
               </div>

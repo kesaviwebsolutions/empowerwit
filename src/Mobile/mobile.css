@@ -114,6 +114,7 @@
     margin: auto;
   }
   a.mobileec.nav-link {
+    
     border: 1px solid #c3729d;
     font-weight: 500;
     color: #c3729d;
@@ -124,7 +125,7 @@
     margin: auto;
     padding: 15px;
     border-radius: 25px;
-    background-color: #fff;
+    background-color: #fff ;
   }
   .css-12yy2iw-TimelineItemContentWrapper {
     align-items: flex-start;
@@ -168,4 +169,23 @@
     color: rgb(212, 74, 115);
     margin-left: 46px;
   }
+}
+
+.dropup .dropdown-toggle::after {
+  display:none !important;
+}
+.mobileview-explore{
+  display: flex;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+
+.burger{
+  background-color: white !important;
+  border-color: #C3729D !important;
+  color:#C3729D!important;
+
+}
+.nav-link{
+  color: #C3729D!important;
 }

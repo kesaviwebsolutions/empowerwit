@@ -1,11 +1,12 @@
 import React from 'react'
 import { Nav } from 'react-bootstrap'
+import { GiHamburgerMenu } from "react-icons/gi";
 
 export default function MobileNav() {
   return (
     <>
       <div>
-        <nav className="navbar navbar-expand-lg bg-transparent">
+        {/* <nav className="navbar navbar-expand-lg bg-transparent">
           <div className="container-fluid">
             <Nav.Link className="navbar-brand" href="#"></Nav.Link>
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,7 +30,30 @@ export default function MobileNav() {
           
             </div>
           </div>
-        </nav>
+        </nav> */}
+
+            {/* <div class="btn-group dropup">
+            <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+            <GiHamburgerMenu/>
+            </button>
+            <ul class="dropdown-menu">
+            <li className="nav-item">
+                  <Nav.Link className="nav-link active" aria-current="page" href="#about-us">About</Nav.Link>
+                </li>
+                <li className="nav-item">
+                  <Nav.Link className="nav-link" href="#trainings">Training</Nav.Link>
+                </li>
+                <li className="nav-item">
+                  <Nav.Link className="nav-link" href="#partners">Partners</Nav.Link>
+                </li>
+                <li className="nav-item">
+                  <Nav.Link className="nav-link" href="#roadmap">Roadmap</Nav.Link>
+                </li>
+
+              
+             
+             </ul>
+                </div> */}
         {/* <nav   className="navbar bg-light fixed-top">
           <div   className="container-fluid">
             <a   className="navbar-brand" href="/">
