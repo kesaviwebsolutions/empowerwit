@@ -110,6 +110,9 @@ img.di {
 .desktop-img {
   margin-top: -80px;
 }
+.abt{
+  width: 70%;
+}
 
 /* VISION */
 
@@ -201,11 +204,13 @@ h1.bdg {
 /* PARTNERS */
 
 img.PI {
-  width: 60%;
+  width: 40%;
   margin-top: 100px;
+  margin-left: 20px;
 }
 .partners {
-  display: grid;
+  display: flex;
+  justify-content: center;
 }
 .partners-area {
   margin-top: 220px;
@@ -338,6 +343,22 @@ img.rmi {
   img.about-img {
     width: 100%;
     margin-top: 100px;
+  }
+  img.ei2 {
+    width: 70%;
+    display: block;
+    margin-right: auto;
+    margin-top: 100px;
+    margin-left: 0px;
+  }
+  .content-heading2 {
+    margin-top: 186px;
+  }
+  .abt{
+    width: 100%;
+  }
+  .desktop-img {
+    margin-top: 0px;
   }
   img.wi {
     width: 90%;
