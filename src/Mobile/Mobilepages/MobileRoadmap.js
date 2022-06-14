@@ -1,6 +1,7 @@
-import React from 'react'
-import { Chrono } from 'react-chrono'
-import img14 from "../Images/img14.png"
+import React from "react";
+import { Chrono } from "react-chrono";
+import img14 from "../Images/img14.png";
+import Mobilecontact from "./Mobilecontact";
 
 export default function MobileRoadmap() {
   const items = [
@@ -32,6 +33,17 @@ export default function MobileRoadmap() {
     },
   ]
 
+  // const items = [
+  //   {
+  //     title: "May 1940",
+  //     contentTitle: "Dunkirk",
+  //     contentText:
+  //       "Men of the British Expeditionary Force (BEF) wade out to a destroyer during the evacuation from Dunkirk.",
+  //     contentDetailedText:
+  //       "On 10 May 1940, Hitler began his long-awaited offensive in the west...",
+  //   },
+  // ];
+
   return (
     <div>
       <div id="roadmap">
@@ -45,11 +57,15 @@ export default function MobileRoadmap() {
                 <div style={{ height: '400px', marginTop: '50px' }}>
                   <Chrono items={items} />
                 </div>
+                {/* <div style={{ width: "500px", height: "400px" }}>
+                  <chrono items={items} />
+                </div> */}
               </div>
             </div>
           </div>
         </div>
       </div>
+      <Mobilecontact/>
     </div>
-  )
+  );
 }

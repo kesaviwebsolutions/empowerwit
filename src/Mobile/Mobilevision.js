@@ -26,7 +26,7 @@ export default function Mobilevision() {
                           style={{
                             color: '#0071BC',
                             paddingLeft: '20px',
-                            fontSize: '40px',
+                            fontSize: '32px',
                             fontWeight: '700',
                           }}
                         >
@@ -45,7 +45,7 @@ export default function Mobilevision() {
                           style={{
                             color: '#0071BC',
                             paddingLeft: '20px',
-                            fontSize: '40px',
+                            fontSize: '32px',
                             fontWeight: '700',
                           }}
                         >
@@ -69,7 +69,7 @@ export default function Mobilevision() {
                           style={{
                             color: '#0071BC',
                             paddingLeft: '20px',
-                            fontSize: '40px',
+                            fontSize: '32px',
                             fontWeight: '700',
                           }}
                         >

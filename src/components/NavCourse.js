@@ -1,9 +1,9 @@
-import React from 'react'
-import img7 from './images/img7.png'
-import './courses.css'
-import RegisterContent from './RegisterContent'
-import { FaTelegram } from 'react-icons/fa'
-import { Link } from 'react-router-dom'
+import React from "react";
+import img7 from "./images/img7.png";
+import "./courses.css";
+import RegisterContent from "./RegisterContent";
+import { FaTelegram } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 export default function NavCourse() {
   return (
@@ -25,6 +25,17 @@ export default function NavCourse() {
             >
               <span className="navbar-toggler-icon"></span>
             </button>
+            {/* <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button> */}
             <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
               <ul className="navbar-nav m-auto">
                 <li className="nav-item">
@@ -33,9 +44,9 @@ export default function NavCourse() {
                     aria-current="page"
                     to="/"
                     style={{
-                      color: '#000000',
-                      letterSpacing: '2px',
-                      fontWeight: '500',
+                      color: "#000000",
+                      letterSpacing: "2px",
+                      fontWeight: "500",
                     }}
                   >
                     BACK TO HOMEPAGE
@@ -43,18 +54,22 @@ export default function NavCourse() {
                 </li>
               </ul>
 
-             
               <div className="buttons d-flex">
                 <div
                   className="btn-sign"
                   style={{
-                    marginTop: '5px',
-                    marginRight: '20px',
-                    cursor: 'pointer',
+                    marginTop: "5px",
+                    marginRight: "20px",
+                    cursor: "pointer",
                   }}
                 >
-                  <a href="https://t.me/EWiTAnnounce" target="_blank" rel="noreferrer" style={{color:'#6c757d'}}>
-                    {' '}
+                  <a
+                    href="https://t.me/EWiTAnnounce"
+                    target="_blank"
+                    rel="noreferrer"
+                    style={{ color: "#6c757d" }}
+                  >
+                    {" "}
                     <FaTelegram size={30} />
                   </a>
                 </div>
@@ -91,11 +106,13 @@ export default function NavCourse() {
                   aria-label="Close"
                 ></button>
               </div>
-              <div className="modal-body"><RegisterContent /></div>
+              <div className="modal-body">
+                <RegisterContent />
+              </div>
             </div>
           </div>
         </div>
       </section>
     </div>
-  )
+  );
 }

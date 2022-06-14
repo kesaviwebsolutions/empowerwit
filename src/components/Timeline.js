@@ -38,7 +38,7 @@ export default function Timeline() {
                     <div className="img-handler-bot">
                       <p>
                         Collaborations with NGOs to promote digital literacy
-                        among women.ewives to become leaders in IT.
+                        among graduate housewives to become leaders in IT.
                       </p>
                     </div>
 
@@ -48,7 +48,7 @@ export default function Timeline() {
                     <div className="img-handler-top">
                       <p>
                         Stamping EWIT's presence across cities with commercial
-                        ads and promotions
+                        ads and promotions.
                       </p>
                     </div>
 
@@ -59,7 +59,7 @@ export default function Timeline() {
                       <p>
                         Expand EWIT's global presence by forming partnerships
                         with organisations working in the fields of women
-                        empowerment across the globe
+                        empowerment across the globe.
                       </p>
                     </div>
                     <span className="ps-sp-bot"></span>
@@ -68,7 +68,7 @@ export default function Timeline() {
                     <div className="img-handler-top">
                       <p>
                         Building women empowerment centric blockchain to bring
-                        power of web3 to women across the globe
+                        power of web3 to women across the globe.
                       </p>
                     </div>
 

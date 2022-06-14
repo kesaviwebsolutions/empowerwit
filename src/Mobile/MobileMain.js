@@ -1,6 +1,6 @@
 import React from 'react'
 import img9 from './Images/img9.png'
-import img5 from './Images/img5.png'
+import img5 from './Images/img.png'
 import './mobile.css'
 import Mobileabout from './Mobilepages/Mobileabout'
 import { Nav } from 'react-bootstrap'
@@ -47,9 +47,11 @@ export default function MobileMain() {
                 <li className="nav-item">
                   <Nav.Link className="nav-link menu" href="#roadmap">Roadmap</Nav.Link>
                 </li>
-
-              
-             
+                <li className="nav-item">
+                <li className="nav-item">
+                  <Nav.Link className="nav-link menu" href="#contact">Contact</Nav.Link>
+                </li>
+                </li>
              </ul>
                 </div>
                   </div>
