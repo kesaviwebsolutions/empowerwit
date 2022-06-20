@@ -53,7 +53,7 @@ export default function SimilarSlider() {
     <div>
       <div className="similar-sliders">
         <div className="st-heading">
-          <h4 style={{ padding: '12.4px 10px' }}>Similar trainings</h4>
+          <h4 style={{ padding: '15px 10px' }}>Similar trainings</h4>
         </div>
         <Slider
           dots={false}
@@ -69,7 +69,7 @@ export default function SimilarSlider() {
                 className="card"
                 style={{
                   width: '21rem',
-                  borderRadius: '25px',
+                  borderRadius: '5px',
                   border: '1px solid',
                 }}
               >
@@ -83,9 +83,9 @@ export default function SimilarSlider() {
                     className="card-img-top"
                     alt="..."
                     style={{
-                      borderTopLeftRadius: '25px',
-                      borderTopRightRadius: '25px',
-                      maxHeight: '130px',
+                      borderTopLeftRadius: '5px',
+                      borderTopRightRadius: '5px',
+                      maxHeight: '180px',
                     }}
                   />
                 )}
@@ -116,8 +116,8 @@ export default function SimilarSlider() {
                       <h3
                         style={{
                           fontSize: '20px',
-                          color: '#d44a73',
-                          marginTop: '20px',
+                          color: '#333333',
+                          marginTop: '15px',
                         }}
                       >
                         {similarCards.title}

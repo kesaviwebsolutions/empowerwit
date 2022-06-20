@@ -5,23 +5,25 @@
   word-wrap: break-word;
   background-color: #fff !important;
   background-clip: border-box;
-  border: 1px solid rgba(0, 0, 0, 0.125);
-  border-radius: 25px !important;
+  border: 3px solid rgba(0, 0, 0, 0.125);
+  border-radius: 5px !important;
 }
 
 .intro {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid;
+  border-bottom: 2px solid;
 }
 .content-area {
   padding: 40px 40px;
   margin: 80px 60px;
-  background-color: #fff;
+  background-color: rgb(255, 255, 255);
   position: relative;
-  border-bottom-right-radius: 25px;
-  border-bottom-left-radius: 25px;
+  border-width: 2px;
+  border-color: #9268A7;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
 }
 iframe.video {
   display: block;
@@ -35,8 +37,8 @@ iframe.video {
   justify-content: space-between;
 }
 img.ii {
-  width: 30%;
-  background-color: #fff;
+  width: 35%;
+  background-color: #333333;
   border-radius: 50px;
   border: none;
 }
@@ -51,32 +53,36 @@ img.ii {
   z-index: 1;
 }
 .ST {
+  border-width: 1px;
+  border-color: #333333;
   position: absolute;
   top: -9%;
-  background: #d44a73;
-  padding-left: 65px;
+  background: #9268A7;
+  padding-left: 80px;
   padding-top: 15px;
   padding-bottom: 15px;
-  color: #fff;
+  color: #333333;
   width: 100%;
   right: 0;
 }
 button.enroll {
+  border-width: 2px;
+  border-color: #333333;
   margin-top: 20px;
   width: 200px;
   padding: 14px;
   font-size: 17px;
-  background-color: #d44a73;
-  color: #fff;
-  border: none;
+  background-color: #ffffff;
+  color: #333333;
   cursor: default !important;
 }
 button:hover {
-  color: #fff;
+  color: #333333;
+  box-shadow: 0px 0px 12px 5px #e0e0e0;
 }
 .tt {
-  width: 47%;
-  color: rgb(212, 74, 115);
+  width: 60%;
+  color: #333333;
   font-size: 20px;
 }
 .tac {
@@ -87,7 +93,7 @@ button:hover {
 }
 p.cc-d {
   margin-left: -20px;
-  width: 90%;
+  width: 100%;
   text-align: left;
 }
 
@@ -97,12 +103,14 @@ p.cc-d {
     margin: 80px 25px;
     background-color: #fff;
     position: relative;
+    border-width: 2px;
+    border-color: #9268A7;
     border-bottom-right-radius: 25px;
     border-bottom-left-radius: 25px;
   }
   .tt {
     width: 70%;
-    color: rgb(212, 74, 115);
+    color: #333333;
   }
 }
 
@@ -117,15 +125,15 @@ p.cc-d {
   }
   .similar-sliders {
     margin-top: 36px;
-    border-top-right-radius: 25px;
-    border-bottom-right-radius: 25px;
-    border-bottom-left-radius: 25px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
     padding-bottom: 10px;
     margin-left: -45px;
   }
   .tt {
     width: 60%;
-    color: rgb(212, 74, 115);
+    color: #333333;
   }
 }
 
@@ -135,7 +143,7 @@ p.cc-d {
     padding: 0px !important;
     border: none;
     margin-top: 50px !important;
-    border-radius: 25px;
+    border-radius: 2px;
     display: block;
     margin: auto;
   }
@@ -144,13 +152,13 @@ p.cc-d {
 @media screen and (max-width: 540px) {
   .tt {
     width: 100%;
-    color: rgb(212, 74, 115);
+    color: #333333;
   }
   .similar-sliders {
     margin-top: 36px;
-    border-top-right-radius: 25px;
-    border-bottom-right-radius: 25px;
-    border-bottom-left-radius: 25px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
     padding-bottom: 10px;
     margin-left: 0px;
   }
@@ -169,6 +177,8 @@ p.cc-d {
     margin: 80px 10px;
     background-color: #fff;
     position: relative;
+    border-width: 2px;
+    border-color: #9268A7;
     border-bottom-right-radius: 25px;
     border-bottom-left-radius: 25px;
   }
@@ -181,7 +191,7 @@ p.cc-d {
   .ST {
     position: absolute;
     top: -4%;
-    background: #d44a73;
+    background: #9268A7;
     padding-left: 65px;
     padding-top: 15px;
     padding-bottom: 15px;
@@ -191,7 +201,7 @@ p.cc-d {
   }
   .tt {
     width: 100%;
-    color: rgb(212, 74, 115);
+    color: #333333;
   }
 }
 @media screen and (max-width: 390px) {
@@ -212,9 +222,9 @@ p.cc-d {
     width: 200px;
     padding: 14px;
     font-size: 17px;
-    background-color: #d44a73;
+    background-color: #ffffff;
     margin-left: 0px !important;
-    color: #fff;
+    color: #333333;
     border: none;
     cursor: default !important;
   }
@@ -223,6 +233,8 @@ p.cc-d {
     margin: 80px 10px;
     background-color: #fff;
     position: relative;
+    border-width: 2px;
+    border-color: #9268A7;
     border-bottom-right-radius: 25px;
     border-bottom-left-radius: 25px;
   }

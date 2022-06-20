@@ -3,7 +3,7 @@
   padding: 0px !important;
   border: none;
   margin-top: 50px !important;
-  border-radius: 25px;
+  border-radius: 5px;
   margin-right: 40px;
   margin-left: 80px;
 }
@@ -12,7 +12,7 @@
 img.icon {
   width: 28%;
   background: #fff;
-  border-radius: 50px;
+  border-radius: 5px;
   position: absolute;
   top: -27%;
   border: none;
@@ -29,7 +29,7 @@ img.icon {
   right: 0;
   padding-left: 50px;
   width: 80%;
-  background-color: #d44a73;
+  background-color: #9268A7;
   color: #fff;
   position: absolute;
 }

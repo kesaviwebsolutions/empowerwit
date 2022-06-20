@@ -54,8 +54,8 @@ export default function CourseCards() {
                       alt="..."
                       style={{
                         maxHeight: '150px',
-                        borderTopLeftRadius: '25px',
-                        borderTopRightRadius: '25px',
+                        borderTopLeftRadius: '5px',
+                        borderTopRightRadius: '5px',
                       }}
                     />
                   )}
@@ -79,7 +79,7 @@ export default function CourseCards() {
                       to={{ pathname: `/tarining-area/${cards.slug.current}` }}
                       style={{ textDecoration: 'none' }}
                     >
-                      <h5 style={{ color: '#d44a73', marginTop: '20px' }}>
+                      <h5 style={{ color: '#333333', marginTop: '20px' }}>
                         {cards.title}
                       </h5>
                       <p
@@ -89,7 +89,7 @@ export default function CourseCards() {
                         {cards.description}
                       </p>
                     </Link>
-                    <div className="duration">
+                    <div className="duration" style={{ marginTop: '30px' }}>
                       <div className="duration-time">
                         <b>{cards.duration}</b>{' '}
                         <span className="time">{cards.time}</span>

@@ -3,15 +3,15 @@
 
 .similar-sliders {
   margin-top: 36px;
-  border-top-right-radius: 25px;
-  border-bottom-right-radius: 25px;
-  border-bottom-left-radius: 25px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
   padding-bottom: 10px;
 }
 .st-heading {
-  background: #d44a73;
+  background: #9268A7;
   color: #fff;
-  border-top-right-radius: 25px;
+  border-top-right-radius: 5px;
 }
 .waiting-icon {
   position: absolute;
@@ -24,13 +24,13 @@ img.mentor-img {
   top: 35%;
   left: 10px;
   width: 20%;
-  border: 2px solid;
-  background: #fff;
+  border: 1px solid;
+  background: #333333;
   border-radius: 50px;
   z-index: 1;
 }
 .mentor-name {
-  background: lightblue;
+  background: #9268A7;
   position: absolute;
   top: 45%;
   right: 0;

@@ -47,7 +47,7 @@ export default function Trainings() {
         <div className="container">
           <div
             className="training-area"
-            style={{ backgroundImage: 'linear-gradient(#edcee3, #c3729d)' }}
+            style={{ backgroundImage: 'linear-gradient(#F2C8D5, #FFFFFF)' }}
           >
             <div className="row">
               <div className="col-md-8">
@@ -65,21 +65,21 @@ export default function Trainings() {
                     </div>
                     <div className="ST">
                       <span className="sst">{cardContent.mentor}</span>
+                      <span
+                        className="available"
+                        style={{
+                          fontSize: '20px',
+                          color: '#319e31',
+                          marginTop: '30px',
+                        }}
+                      >
+                        Available{' '}
+                        <BsFillCircleFill size={20} color="#319e31" />
+                    </span>
                     </div>
                   </div>
                   <div className="intro">
                     <h3 className="tt">{cardContent.title}</h3>
-                    <span
-                      className="available"
-                      style={{
-                        fontSize: '20px',
-                        color: '#319e31',
-                        marginTop: '30px',
-                      }}
-                    >
-                      session available{' '}
-                      <BsFillCircleFill size={15} color="#319e31" />
-                    </span>
                   </div>
                   <div
                     className="container"
@@ -107,16 +107,16 @@ export default function Trainings() {
                         <div className="ed">
                           {' '}
                           <b>{cardContent.duration}</b>{' '}
-                          <span>{cardContent.time}</span>
+                          <span>{ cardContent.time}</span>
                         </div>
                         <div className="levels">
                           <div className="level-item">
                             <b style={{ color: '#000000' }}>Level</b>{' '}
-                            <BsFillCircleFill size={15} color="#fed3b2" />
+                            <BsFillCircleFill size={25} color="#fed3b2" />
                           </div>
                           <div className="level-items">
-                            <BsFillCircleFill size={15} color="#ccccc" />
-                            <BsFillCircleFill size={15} color="#ccccc" />
+                            <BsFillCircleFill size={25} color="#ccccc" />
+                            <BsFillCircleFill size={25} color="#ccccc" />
                           </div>
                         </div>
                       </div>

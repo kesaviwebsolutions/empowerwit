@@ -5,10 +5,10 @@ img.course-img {
 
 /* COURSES */
 .training-heading {
-  margin-left: 15px;
+  margin-left: 80px;
 }
 .training-area {
-  border-bottom: 4px solid #fff;
+  border-bottom: 1px solid #ffffff;
 }
 .fliter-area {
   display: flex;
@@ -21,7 +21,7 @@ img.course-img {
 }
 .training-section {
   padding: 19px 10px;
-  background-image: linear-gradient(#edcee3, #c3729d);
+  background-image: linear-gradient(#F2C8D5, #ffffff);
 }
 
 @media screen and (max-width: 480px) {

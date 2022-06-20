@@ -25,17 +25,6 @@ export default function NavCourse() {
             >
               <span className="navbar-toggler-icon"></span>
             </button>
-            {/* <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button> */}
             <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
               <ul className="navbar-nav m-auto">
                 <li className="nav-item">
@@ -44,7 +33,7 @@ export default function NavCourse() {
                     aria-current="page"
                     to="/"
                     style={{
-                      color: "#000000",
+                      color: "#B3B3B3",
                       letterSpacing: "2px",
                       fontWeight: "500",
                     }}

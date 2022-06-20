@@ -15,7 +15,7 @@ export default function Courses() {
               <div className="row">
                 <div className="col-md-6">
                   <div className="training-heading">
-                    <h1 style={{ color: "#fff" }}>Trainings</h1>
+                    <h2 style={{ color: "#FFFFFF" }}>TRAININGS</h2>
                   </div>
                 </div>
                 <div className="col-md-6">
@@ -35,8 +35,8 @@ export default function Courses() {
                       className="button border border-0"
                       type="submit"
                       style={{
-                        background: "#D44A73",
-                        color: "#fff",
+                        background: "#ffffff",
+                        color: "#333333",
                         fontSize: "17px",
                         width: "150px",
                       }}
