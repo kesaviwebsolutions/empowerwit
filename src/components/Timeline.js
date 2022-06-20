@@ -13,7 +13,7 @@ export default function Timeline() {
             </div>
             <div className="ps-timeline-sec position-relative">
               <div className="container">
-                <h1
+                {/* <h1
                   style={{
                     position: 'absolute',
                     top: '-40px',
@@ -25,7 +25,7 @@ export default function Timeline() {
                   }}
                 >
                   April 2022
-                </h1>
+                </h1> */}
                 <ol className="ps-timeline">
                   <li>
                     <div className="img-handler-top">
@@ -75,7 +75,7 @@ export default function Timeline() {
                     <span className="ps-sp-top"></span>
                   </li>
                 </ol>
-                <h1
+                {/* <h1
                   style={{
                     position: 'absolute',
                     top: '-40px',
@@ -87,7 +87,7 @@ export default function Timeline() {
                   }}
                 >
                   March 2023
-                </h1>
+                </h1> */}
               </div>
             </div>
           </div>

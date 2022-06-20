@@ -1,5 +1,5 @@
 import React from 'react'
-import img from './images/img10.png'
+import img from './images/img9.png'
 import bg1 from './images/ewit_background2.png'
 import RegisterContent from './RegisterContent'
 import ContactUs from './ContactUs'

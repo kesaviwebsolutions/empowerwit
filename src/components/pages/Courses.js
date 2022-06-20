@@ -1,5 +1,6 @@
 import React from "react";
 import CourseCards from "../CourseCards";
+import Footer from "../Footer";
 import NavCourse from "../NavCourse";
 
 export default function Courses() {
@@ -51,14 +52,15 @@ export default function Courses() {
               <div className="row">
                 <div className="col-md-9">
                   <div className="fliter-area">
-                   
+
                   </div>
                 </div>
-            
+
               </div>
             </div>
             <CourseCards />
           </div>
+          <Footer />
         </div>
       </section>
     </div>

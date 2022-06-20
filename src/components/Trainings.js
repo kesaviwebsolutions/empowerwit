@@ -5,6 +5,7 @@ import './training.css'
 import OtherCourses from './OtherCourses'
 import { useParams } from 'react-router-dom'
 import Client from '../Client'
+import Footer from './Footer'
 
 export default function Trainings() {
   const [cardContent, setCardContent] = useState([])
@@ -139,6 +140,7 @@ export default function Trainings() {
               </div>
             </div>
           </div>
+          <Footer />
         </div>
       </section>
     </div>

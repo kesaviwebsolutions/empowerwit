@@ -25,5 +25,11 @@ img.course-img {
 }
 
 @media screen and (max-width: 480px) {
-
+  ul.footer-link-item {
+    display: grid;
+    justify-content: start;
+  }
+  li.LI {
+    margin-top: 10px;
+  }
 }
