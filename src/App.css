@@ -1,6 +1,6 @@
 @font-face {
-  font-family: Futura Lt BT;
-  src: url('../src/futura\ light\ bt.ttf');
+  font-family: "Myriad Pro";
+  src: url('../src/Myriad\ Pro\ Regular.ttf');
 }
 
 /* contact */
@@ -12,10 +12,10 @@
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #d44a73;
+  color: #B3B3B3;
   background-color: #fff;
   background-clip: padding-box;
-  border: 1px solid #d44a73 !important;
+  border: 1px solid #B3B3B3 !important;
   appearance: none;
   border-radius: 0.25rem;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
@@ -23,18 +23,15 @@
 
 /* NAVBAR*/
 
-
 .container-fluid {
   max-width: 1120px;
-  margin: 70px auto;
+  margin: 35px auto;
 }
 .navbar-light .navbar-nav .show > .nav-link,
 .navbar-light .navbar-nav .nav-link.active {
-  color: rgba(0, 0, 0, 0.9);
-  font-family: 'Futura Lt BT';
+  font-family: 'Myriad Pro Semibold';
   font-weight: 700;
 }
-
 img.bg1 {
   width: 100%;
   object-fit: cover;
@@ -71,26 +68,28 @@ img.heading-img {
 }
 .hero-para {
   margin-top: 50px;
-  font-family: 'Futura Lt BT';
+  font-family: 'Myriad Pro Semibold';
   font-weight: 500;
 }
 .explore-buttons {
-  margin-left: 70px;
-  margin-top: 30px;
+  width: 300px;
+  height: 200px;
+  margin-left: 65%;
+  margin-top: 490px; /* Can certainly be improved - define the margin on top of the Hero button */
 }
 a.btn {
   border: 1px solid;
-  border-radius: 25px;
+  border-radius: 5px;
   font-size: 18px;
   padding: 10px;
-  background-color: #d44a73;
-  color: #fff;
+  background-color: #ffffff;
+  color: #4D4D4D;
   cursor: default;
   transition: 0.5s;
 }
 a.btn:hover {
-  color: #fff;
-  box-shadow: 0px 0px 9px 2px #d44a73;
+  color: #4D4D4D;
+  box-shadow: 0px 0px 12px 5px #ffffff;
 }
 
 /* ABOUT */
