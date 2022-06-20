@@ -1,6 +1,6 @@
 import React from 'react'
-import img from './images/img10.png'
-import bg1 from './images/ewit_background2.png'
+import img from './images/landing.png'
+import bg1 from './images/bg.png'
 import RegisterContent from './RegisterContent'
 import ContactUs from './ContactUs'
 import { FaTelegram } from 'react-icons/fa'
@@ -13,20 +13,6 @@ export default function Navbar() {
       <section>
         <nav className="navbar navbar-expand-lg navbar-light bg-transparent">
           <div className="container-fluid">
-            <a className="navbar-brand" href="/" style={{ width: '0' }}>
-              <img src={img} alt="" style={{ maxWidth: '150px' }} />
-            </a>
-            <button
-              className="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarNav"
-              aria-controls="navbarNav"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span className="navbar-toggler-icon"></span>
-            </button>
             <div className="collapse navbar-collapse" id="navbarNav">
               <ul className="navbar-nav m-auto">
                 <li className="nav-item">
@@ -34,7 +20,7 @@ export default function Navbar() {
                     className="nav-link active"
                     aria-current="page"
                   >
-                    About
+                    ABOUT
                   </Nav.Link>
                 </li>
                 <li className="nav-item">
@@ -42,7 +28,7 @@ export default function Navbar() {
                     className="nav-link active"
                     aria-current="page"
                   >
-                    Trainings
+                    TRAININGS
                   </Nav.Link>
                 </li>
                 <li className="nav-item">
@@ -50,7 +36,7 @@ export default function Navbar() {
                     className="nav-link active"
                     aria-current="page"
                   >
-                    Partners
+                    PARTNERS
                   </Nav.Link>
                 </li>
                 <li className="nav-item">
@@ -58,7 +44,7 @@ export default function Navbar() {
                     className="nav-link active"
                     aria-current="page"
                   >
-                    Roadmap
+                    ROADMAP
                   </Nav.Link>
                 </li>
                 <li className="nav-item">
@@ -66,7 +52,16 @@ export default function Navbar() {
                     className="nav-link active"
                     aria-current="page"
                   >
-                    Courses
+                    COURSES
+                  </Nav.Link>
+
+                </li>
+                <li className="nav-item">
+                  <Nav.Link href="/contact"
+                    className="nav-link active"
+                    aria-current="page"
+                  >
+                    CONTACT
                   </Nav.Link>
 
                 </li>
@@ -78,10 +73,6 @@ export default function Navbar() {
                     cursor: 'default',
                   }}
                 >
-                  <button type="button" className="btn bg-transparent" data-bs-toggle="modal" data-bs-target="#staticBackdrop" style={{ marginLeft: "50px", fontFamily: 'Futura Lt BT', fontWeight: "700", color:'#C3729D'}}>
-                    Contact
-                  </button>
-
                 </div>
               </ul>
 
@@ -94,7 +85,7 @@ export default function Navbar() {
                     cursor: 'pointer',
                   }}
                 >
-                  <a href="https://t.me/EWiTAnnounce" target="_blank" rel="noreferrer" style={{ color: '#6c757d' }}>
+                  <a href="https://t.me/EWiTAnnounce" target="_blank" rel="noreferrer" style={{ color: '#9268A7' }}>
                     {' '}
                     <FaTelegram size={30} />
                   </a>
