@@ -113,10 +113,11 @@
     display: block;
     margin: auto;
   }
-  a.mobileec.nav-link {
+  a.mobileec{
     
     border: 1px solid #c3729d;
     font-weight: 500;
+    text-decoration: none;
     color: #c3729d;
     text-align: center;
     font-size: 19px;
