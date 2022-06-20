@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import img16 from '../Images/img16.png'
 import img4 from '../Images/img4.png'
 import MobilePartners from './MobilePartners'
@@ -107,8 +108,8 @@ export default function MobileTarinings() {
                     <img src={img4} alt="" className="mt" />
                   </div>
                   <div className="mobileexplore-button">
-                    <a
-                      href="/courses"
+                    <Link
+                      to="/courses"
                       style={{
                         textDecoration: 'none',
                         fontSize: '25px',
@@ -119,7 +120,7 @@ export default function MobileTarinings() {
                       }}
                     >
                       Explore now
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
