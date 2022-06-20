@@ -63,7 +63,7 @@ export default function Navbar() {
                   </Nav.Link>
                 </li>
                 <li className="nav-item">
-                  <Link href="/courses"
+                  <Link to="/courses"
                     className="nav-link active"
                     aria-current="page"
                   >

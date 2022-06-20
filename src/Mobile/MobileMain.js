@@ -28,7 +28,7 @@ export default function MobileMain() {
                     <img src={img5} alt="" className="mi" />
                   </div>
                   <div className="mobileview-explore">
-                    <Link href="/courses" className="mobileec">
+                    <Link to="/courses" className="mobileec">
                       Explore our trainings
                     </Link>
                     <div class="btn-group dropup">
