@@ -5,6 +5,7 @@ import RegisterContent from './RegisterContent'
 import ContactUs from './ContactUs'
 import { FaTelegram } from 'react-icons/fa'
 import { Nav } from 'react-bootstrap'
+import { Link } from "react-router-dom"
 
 
 export default function Navbar() {
@@ -62,12 +63,12 @@ export default function Navbar() {
                   </Nav.Link>
                 </li>
                 <li className="nav-item">
-                  <Nav.Link href="/courses"
+                  <Link href="/courses"
                     className="nav-link active"
                     aria-current="page"
                   >
                     Courses
-                  </Nav.Link>
+                  </Link>
 
                 </li>
                 <div
@@ -78,7 +79,7 @@ export default function Navbar() {
                     cursor: 'default',
                   }}
                 >
-                  <button type="button" className="btn bg-transparent" data-bs-toggle="modal" data-bs-target="#staticBackdrop" style={{ marginLeft: "50px", fontFamily: 'Futura Lt BT', fontWeight: "700", color:'#C3729D'}}>
+                  <button type="button" className="btn bg-transparent" data-bs-toggle="modal" data-bs-target="#staticBackdrop" style={{ marginLeft: "50px", fontFamily: 'Futura Lt BT', fontWeight: "700", color: '#C3729D' }}>
                     Contact
                   </button>
 
@@ -125,7 +126,7 @@ export default function Navbar() {
           <div className="modal-dialog modal-dialog-centered">
             <div className="modal-content">
               <div className="modal-header">
-                <h5 className="modal-title ms-auto" id="exampleModalLabel" style={{color: '#d44a73'}}>
+                <h5 className="modal-title ms-auto" id="exampleModalLabel" style={{ color: '#d44a73' }}>
                   Registration Form
                 </h5>
                 <button
@@ -144,7 +145,7 @@ export default function Navbar() {
           <div className="modal-dialog">
             <div className="modal-content">
               <div className="modal-header">
-                <h5 className="modal-title ms-auto" id="exampleModalLabel" style={{color: '#d44a73'}}>
+                <h5 className="modal-title ms-auto" id="exampleModalLabel" style={{ color: '#d44a73' }}>
                   Contact Us
                 </h5>
                 <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>

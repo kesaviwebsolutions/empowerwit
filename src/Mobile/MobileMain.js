@@ -6,6 +6,7 @@ import Mobileabout from './Mobilepages/Mobileabout'
 import { Nav } from 'react-bootstrap'
 import MobileNav from './MobileNav'
 import { GiHamburgerMenu } from "react-icons/gi";
+import { Link } from 'react-router-dom'
 
 export default function MobileMain() {
   return (
@@ -27,33 +28,33 @@ export default function MobileMain() {
                     <img src={img5} alt="" className="mi" />
                   </div>
                   <div className="mobileview-explore">
-                    <Nav.Link href="/courses" className="mobileec">
+                    <Link href="/courses" className="mobileec">
                       Explore our trainings
-                    </Nav.Link>
+                    </Link>
                     <div class="btn-group dropup">
-            <button type="button" className="btn btn-secondary dropdown-toggle burger" data-bs-toggle="dropdown" aria-expanded="false">
-            <GiHamburgerMenu/>
-            </button>
-            <ul class="dropdown-menu">
-            <li className="nav-item">
-                  <Nav.Link className="nav-link active menu" aria-current="page" href="#about-us">About</Nav.Link>
-                </li>
-                <li className="nav-item">
-                  <Nav.Link className="nav-link menu" href="#trainings">Training</Nav.Link>
-                </li>
-                <li className="nav-item">
-                  <Nav.Link className="nav-link menu" href="#partners">Partners</Nav.Link>
-                </li>
-                <li className="nav-item">
-                  <Nav.Link className="nav-link menu" href="#roadmap">Roadmap</Nav.Link>
-                </li>
-                <li className="nav-item">
-                <li className="nav-item">
-                  <Nav.Link className="nav-link menu" href="#contact">Contact</Nav.Link>
-                </li>
-                </li>
-             </ul>
-                </div>
+                      <button type="button" className="btn btn-secondary dropdown-toggle burger" data-bs-toggle="dropdown" aria-expanded="false">
+                        <GiHamburgerMenu />
+                      </button>
+                      <ul class="dropdown-menu">
+                        <li className="nav-item">
+                          <Nav.Link className="nav-link active menu" aria-current="page" href="#about-us">About</Nav.Link>
+                        </li>
+                        <li className="nav-item">
+                          <Nav.Link className="nav-link menu" href="#trainings">Training</Nav.Link>
+                        </li>
+                        <li className="nav-item">
+                          <Nav.Link className="nav-link menu" href="#partners">Partners</Nav.Link>
+                        </li>
+                        <li className="nav-item">
+                          <Nav.Link className="nav-link menu" href="#roadmap">Roadmap</Nav.Link>
+                        </li>
+                        <li className="nav-item">
+                          <li className="nav-item">
+                            <Nav.Link className="nav-link menu" href="#contact">Contact</Nav.Link>
+                          </li>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
               </div>
