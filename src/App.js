@@ -7,9 +7,11 @@ import MobileHome from "./Mobile/Mobilepages/MobileHome";
 import { BrowserView, MobileView } from 'react-device-detect';
 
 
+
 function App() {
   return (
     <div className="App">
+      
       <Router>
         <Routes>
           <Route path="/" element={<><BrowserView><Home /></BrowserView> <MobileView><MobileHome /></MobileView></>} />

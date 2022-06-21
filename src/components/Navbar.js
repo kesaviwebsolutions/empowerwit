@@ -1,6 +1,6 @@
 import React from 'react'
 import img from './images/img9.png'
-import bg1 from './images/ewit_background2.png'
+
 import RegisterContent from './RegisterContent'
 import ContactUs from './ContactUs'
 import { FaTelegram } from 'react-icons/fa'
@@ -111,9 +111,7 @@ export default function Navbar() {
               </div>
             </div>
           </div>
-          <div className="background">
-            <img src={bg1} alt="" className="bg1" />
-          </div>
+         
         </nav>
         {/* MODAL */}
         <div
@@ -126,7 +124,7 @@ export default function Navbar() {
           <div className="modal-dialog modal-dialog-centered">
             <div className="modal-content">
               <div className="modal-header">
-                <h5 className="modal-title ms-auto" id="exampleModalLabel" style={{ color: '#d44a73' }}>
+                <h5 className="modal-title ms-auto" id="exampleModalLabel" style={{ color: '#fff' }}>
                   Registration Form
                 </h5>
                 <button
@@ -145,7 +143,7 @@ export default function Navbar() {
           <div className="modal-dialog">
             <div className="modal-content">
               <div className="modal-header">
-                <h5 className="modal-title ms-auto" id="exampleModalLabel" style={{ color: '#d44a73' }}>
+                <h5 className="modal-title ms-auto" id="exampleModalLabel" style={{ color: '#white' }}>
                   Contact Us
                 </h5>
                 <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>

@@ -42,7 +42,7 @@ export default function ContactUs() {
           </div>
           <button
             type="submit"
-            className="btn btn-lg btn-secondary btn-block"
+            className="btn btn-lg btn-outline-light btn-block"
             style={{ marginTop: '20px' }}
           >
             Submit

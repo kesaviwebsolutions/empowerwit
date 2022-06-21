@@ -34,22 +34,35 @@
   font-weight: 700;
 }
 
-img.bg1 {
-  width: 100%;
-  object-fit: cover;
-}
 .background {
-  position: absolute;
-  z-index: -1;
-  width: 100%;
-  overflow: hidden;
-  top: 0;
-  left: 0;
+  background-image: url('./components/images/ewit_background3.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+
 }
 li.nav-item {
   margin-left: 50px;
   margin-right: -35px;
 }
+
+.modal-body {
+  position: relative;
+  flex: 1 1 auto;
+  padding: 1rem;
+  background-image: linear-gradient(#edcee3, #c3729d);
+}
+.modal-header{
+  background-image: linear-gradient(#edcee3, #c3729d);
+  color: white;
+
+}
+label.form-label{
+  color: white;
+}
+.form-check{
+  color: white;
+}
+
 
 /* HERO */
 .hero-img {

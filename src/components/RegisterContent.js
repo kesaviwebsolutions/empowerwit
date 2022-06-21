@@ -79,7 +79,7 @@ export default function RegisterContent() {
             />
           </div>
           <div className="col-md-12 d-flex justify-content-between">
-            <label htmlFor="">Gender</label>
+            <label htmlFor=""style={{color:"white"}}>Gender</label>
             <div className="form-check">
               <input
                 className="form-check-input"
@@ -217,7 +217,7 @@ export default function RegisterContent() {
             </select>
           </div>
           <div className="col-12">
-            <button type="submit" className="btn btn-primary">
+            <button type="submit" className="btn btn-outline-light">
               Register
             </button>
           </div>
