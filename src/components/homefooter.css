@@ -16,6 +16,6 @@ a.home-footer-social-link-item {
   margin-left: 20px;
   color: #d44a73;
 }
-.a.home-footer-social-link-item:hover {
+a.home-footer-social-link-item:hover {
   color: #d44a73;
 }

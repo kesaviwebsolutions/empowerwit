@@ -31,36 +31,36 @@ export default function Navbar() {
             <div className="collapse navbar-collapse" id="navbarNav">
               <ul className="navbar-nav m-auto">
                 <li className="nav-item">
-                  <a href="#about-us"
+                  <Nav.Link href="#about-us"
                     className="nav-link active"
                     aria-current="page"
                   >
                     About
-                  </a>
+                  </Nav.Link>
                 </li>
                 <li className="nav-item">
-                  <a href="#trainings"
+                  <Nav.Link href="#trainings"
                     className="nav-link active"
                     aria-current="page"
                   >
                     Trainings
-                  </a>
+                  </Nav.Link>
                 </li>
                 <li className="nav-item">
-                  <a href="#partners"
+                  <Nav.Link href="#partners"
                     className="nav-link active"
                     aria-current="page"
                   >
                     Partners
-                  </a>
+                  </Nav.Link>
                 </li>
                 <li className="nav-item">
-                  <a href="#roadmap"
+                  <Nav.Link href="#roadmap"
                     className="nav-link active"
                     aria-current="page"
                   >
                     Roadmap
-                  </a>
+                  </Nav.Link>
                 </li>
                 <li className="nav-item">
                   <Link to="/courses"

@@ -3,7 +3,7 @@
     padding: 0.25rem 0.75rem;
     font-size: 1.25rem;
     line-height: 1;
-    background-color:rgb(212, 74, 115) !important;
+    background-color: rgb(212, 74, 115) !important;
     border: 2px solid #000;
     border-radius: 0.25rem;
     transition: box-shadow 0.15s ease-in-out;
@@ -42,6 +42,15 @@
     overflow: hidden;
     background-image: url('../Mobile/Images/mobile_background6.png');
     margin-top: 50px;
+  }
+  .vertical-timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 18px;
+    height: 100%;
+    width: 4px;
+    background: #d44a73 !important;
   }
   .mi {
     max-width: 300px;
@@ -113,8 +122,7 @@
     display: block;
     margin: auto;
   }
-  a.mobileec{
-    
+  a.mobileec {
     border: 1px solid #c3729d;
     font-weight: 500;
     text-decoration: none;
@@ -126,7 +134,7 @@
     margin: auto;
     padding: 15px;
     border-radius: 25px;
-    background-color: rgba(255, 255, 255, 0.719) ;
+    background-color: rgba(255, 255, 255, 0.719);
   }
   .css-12yy2iw-TimelineItemContentWrapper {
     align-items: flex-start;
@@ -173,21 +181,20 @@
 }
 
 .dropup .dropdown-toggle::after {
-  display:none !important;
+  display: none !important;
 }
-.mobileview-explore{
+.mobileview-explore {
   display: flex;
   margin-bottom: 10px;
   margin-right: 10px;
   margin-top: 10px;
 }
 
-.burger{
+.burger {
   background-color: rgba(255, 255, 255, 0.856) !important;
-  border-color: #C3729D !important;
-  color:#C3729D!important;
-
+  border-color: #c3729d !important;
+  color: #c3729d !important;
 }
-.nav-link{
-  color: #C3729D!important;
+.nav-link {
+  color: #c3729d !important;
 }

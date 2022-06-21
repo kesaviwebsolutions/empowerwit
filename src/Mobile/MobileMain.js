@@ -31,27 +31,25 @@ export default function MobileMain() {
                     <Link to="/courses" className="mobileec">
                       Explore our trainings
                     </Link>
-                    <div class="btn-group dropup">
+                    <div className="btn-group dropup">
                       <button type="button" className="btn btn-secondary dropdown-toggle burger" data-bs-toggle="dropdown" aria-expanded="false">
                         <GiHamburgerMenu />
                       </button>
-                      <ul class="dropdown-menu">
+                      <ul className="dropdown-menu">
                         <li className="nav-item">
-                          <a className="nav-link active menu" aria-current="page" href="#about-us">About</a>
+                          <Nav.Link className="nav-link active menu" aria-current="page" href="#about-us">About</Nav.Link>
                         </li>
                         <li className="nav-item">
-                          <a className="nav-link menu" href="#trainings">Training</a>
+                          <Nav.Link className="nav-link menu" href="#trainings">Training</Nav.Link>
                         </li>
                         <li className="nav-item">
-                          <a className="nav-link menu" href="#partners">Partners</a>
+                          <Nav.Link className="nav-link menu" href="#partners">Partners</Nav.Link>
                         </li>
                         <li className="nav-item">
-                          <a className="nav-link menu" href="#roadmap">Roadmap</a>
+                          <Nav.Link className="nav-link menu" href="#roadmap">Roadmap</Nav.Link>
                         </li>
                         <li className="nav-item">
-                          <li className="nav-item">
-                            <a className="nav-link menu" href="#contact">Contact</a>
-                          </li>
+                          <Nav.Link className="nav-link menu" href="#contact">Contact</Nav.Link>
                         </li>
                       </ul>
                     </div>

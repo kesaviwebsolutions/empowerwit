@@ -1,48 +1,14 @@
 import React from "react";
-import { Chrono } from "react-chrono";
+import {
+  VerticalTimeline,
+  VerticalTimelineElement,
+} from "react-vertical-timeline-component";
+import "react-vertical-timeline-component/style.min.css";
 import img14 from "../Images/img14.png";
 import Mobilecontact from "./Mobilecontact";
 
 export default function MobileRoadmap() {
-  const items = [
-    {
-      title: 'April 2022',
-    },
-    {
-      cardDetailedText: 'Training 30 housewives to become leaders in IT',
-    },
-    {
-      cardDetailedText:
-        'Collaborations with NGOs to promote digital literacy among women. ewives to become leaders in IT.',
-    },
-    {
-      cardDetailedText:
-        "Stamping EWIT's presence across cities with commercial ads and promotions.",
-    },
-    {
-      cardDetailedText:
-        "Expand EWIT's global presence by forming partnerships with organisations working in the fields of women empowerment across  the globe.",
-    },
-    {
-      cardDetailedText:
-        'Building women empowerment centric blockchain to bring power of web3 to women across the globe.',
-    },
-    {
-      title: 'March 2023',
-      cardDetailedText: 'Roadmap End',
-    },
-  ]
 
-  // const items = [
-  //   {
-  //     title: "May 1940",
-  //     contentTitle: "Dunkirk",
-  //     contentText:
-  //       "Men of the British Expeditionary Force (BEF) wade out to a destroyer during the evacuation from Dunkirk.",
-  //     contentDetailedText:
-  //       "On 10 May 1940, Hitler began his long-awaited offensive in the west...",
-  //   },
-  // ];
 
   return (
     <div>
@@ -54,18 +20,84 @@ export default function MobileRoadmap() {
                 <div className="mobile-img">
                   <img src={img14} alt="" className="im" />
                 </div>
-                <div style={{ height: '400px', marginTop: '50px' }}>
-                  <Chrono items={items} />
+                <div className="container">
+                  <VerticalTimeline>
+                    <VerticalTimelineElement
+                      className="vertical-timeline-element--work"
+                      contentStyle={{ background: '#d44a73 ', color: '#fff' }}
+                      contentArrowStyle={{ borderRight: '7px solid  #d44a73 ' }}
+                      iconStyle={{ background: "#ff90ac", color: "#fff" }}
+                    >
+
+                      <p>
+                        Training 30 housewives to
+                        become leaders in IT
+                      </p>
+                    </VerticalTimelineElement>
+                    <VerticalTimelineElement
+                      className="vertical-timeline-element--work"
+                      contentStyle={{ background: '#d44a73 ', color: '#fff' }}
+                      contentArrowStyle={{ borderRight: '7px solid  #d44a73 ' }}
+                      iconStyle={{ background: "#ff90ac", color: "#fff" }}
+                    >
+
+                      <p>
+                        Collaborations with NGOs to promote
+                        digital literacy among women.ewives to
+                        become leaders in IT.
+                      </p>
+                    </VerticalTimelineElement>
+                    <VerticalTimelineElement
+                      className="vertical-timeline-element--work"
+                      contentStyle={{ background: '#d44a73 ', color: '#fff' }}
+                      contentArrowStyle={{ borderRight: '7px solid  #d44a73 ' }}
+                      iconStyle={{ background: "#ff90ac", color: "#fff" }}
+                    >
+
+                      <p>
+                        Stamping EWIT's presence
+                        across cities with commercial
+                        ads and promotions.
+                      </p>
+
+                    </VerticalTimelineElement>
+                    <VerticalTimelineElement
+                      className="vertical-timeline-element--work"
+                      contentStyle={{ background: '#d44a73 ', color: '#fff' }}
+                      contentArrowStyle={{ borderRight: '7px solid  #d44a73 ' }}
+                      iconStyle={{ background: "#ff90ac", color: "#fff" }}
+                    >
+
+                      <p>
+                        Expand EWIT's global presence by forming
+                        partnerships with organisations working in
+                        the fields of women empowerment across
+                        the globe.
+                      </p>
+
+                    </VerticalTimelineElement>
+                    <VerticalTimelineElement
+                      className="vertical-timeline-element--work"
+                      contentStyle={{ background: '#d44a73 ', color: '#fff' }}
+                      contentArrowStyle={{ borderRight: '7px solid  #d44a73 ' }}
+                      iconStyle={{ background: "#ff90ac", color: "#fff" }}
+                    >
+
+                      <p>
+                        Building women empowerment
+                        centric blockchain to bring power of
+                        web3 to women across the globe.
+                      </p>
+
+                    </VerticalTimelineElement>
+                  </VerticalTimeline>
                 </div>
-                {/* <div style={{ width: "500px", height: "400px" }}>
-                  <chrono items={items} />
-                </div> */}
               </div>
             </div>
           </div>
         </div>
       </div>
-      <Mobilecontact/>
+      <Mobilecontact />
     </div>
   );
 }
