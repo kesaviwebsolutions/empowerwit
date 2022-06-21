@@ -37,20 +37,20 @@ export default function MobileMain() {
                       </button>
                       <ul class="dropdown-menu">
                         <li className="nav-item">
-                          <Nav.Link className="nav-link active menu" aria-current="page" href="#about-us">About</Nav.Link>
+                          <a className="nav-link active menu" aria-current="page" href="#about-us">About</a>
                         </li>
                         <li className="nav-item">
-                          <Nav.Link className="nav-link menu" href="#trainings">Training</Nav.Link>
+                          <a className="nav-link menu" href="#trainings">Training</a>
                         </li>
                         <li className="nav-item">
-                          <Nav.Link className="nav-link menu" href="#partners">Partners</Nav.Link>
+                          <a className="nav-link menu" href="#partners">Partners</a>
                         </li>
                         <li className="nav-item">
-                          <Nav.Link className="nav-link menu" href="#roadmap">Roadmap</Nav.Link>
+                          <a className="nav-link menu" href="#roadmap">Roadmap</a>
                         </li>
                         <li className="nav-item">
                           <li className="nav-item">
-                            <Nav.Link className="nav-link menu" href="#contact">Contact</Nav.Link>
+                            <a className="nav-link menu" href="#contact">Contact</a>
                           </li>
                         </li>
                       </ul>

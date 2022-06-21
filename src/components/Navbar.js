@@ -14,9 +14,9 @@ export default function Navbar() {
       <section>
         <nav className="navbar navbar-expand-lg navbar-light bg-transparent">
           <div className="container-fluid">
-            <a className="navbar-brand" href="/" style={{ width: '0' }}>
+            <Link className="navbar-brand" to="/" style={{ width: '0' }}>
               <img src={img} alt="" style={{ maxWidth: '150px' }} />
-            </a>
+            </Link>
             <button
               className="navbar-toggler"
               type="button"
@@ -31,36 +31,36 @@ export default function Navbar() {
             <div className="collapse navbar-collapse" id="navbarNav">
               <ul className="navbar-nav m-auto">
                 <li className="nav-item">
-                  <Nav.Link href="#about-us"
+                  <a href="#about-us"
                     className="nav-link active"
                     aria-current="page"
                   >
                     About
-                  </Nav.Link>
+                  </a>
                 </li>
                 <li className="nav-item">
-                  <Nav.Link href="#trainings"
+                  <a href="#trainings"
                     className="nav-link active"
                     aria-current="page"
                   >
                     Trainings
-                  </Nav.Link>
+                  </a>
                 </li>
                 <li className="nav-item">
-                  <Nav.Link href="#partners"
+                  <a href="#partners"
                     className="nav-link active"
                     aria-current="page"
                   >
                     Partners
-                  </Nav.Link>
+                  </a>
                 </li>
                 <li className="nav-item">
-                  <Nav.Link href="#roadmap"
+                  <a href="#roadmap"
                     className="nav-link active"
                     aria-current="page"
                   >
                     Roadmap
-                  </Nav.Link>
+                  </a>
                 </li>
                 <li className="nav-item">
                   <Link to="/courses"

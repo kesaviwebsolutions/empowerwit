@@ -109,7 +109,7 @@ export default function SimilarSlider() {
                 <div className="card-body">
                   <div className="card-title">
                     <Link
-                      to={{ pathname: `/tarining-area/${similarCards.slug.current}` }}
+                      to={{ pathname:`/tarining-area/${similarCards.slug.current}` }}
                       style={{ textDecoration: 'none' }}
 
                     >

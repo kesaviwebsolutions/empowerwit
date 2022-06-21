@@ -5,7 +5,7 @@ import Home from "./components/pages/Home";
 import Trainings from "./components/Trainings";
 import MobileHome from "./Mobile/Mobilepages/MobileHome";
 import { BrowserView, MobileView } from 'react-device-detect';
-import Mobileabout from "./Mobile/Mobilepages/Mobileabout";
+
 
 function App() {
   return (
