@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import NavTraining from './NavTraining'
 import { BsFillCircleFill } from 'react-icons/bs'
+import { FcApproval } from 'react-icons/fc'
 import './training.css'
 import OtherCourses from './OtherCourses'
 import { useParams } from 'react-router-dom'
@@ -69,13 +70,12 @@ export default function Trainings() {
                         className="available"
                         style={{
                           fontSize: '20px',
-                          color: '#319e31',
-                          marginTop: '30px',
+                          color: '#8bc34a',
                         }}
                       >
-                        Available{' '}
-                        <BsFillCircleFill size={20} color="#319e31" />
-                    </span>
+                        Session available{' '}
+                        <FcApproval size={30}/>
+                      </span>
                     </div>
                   </div>
                   <div className="intro">
@@ -134,7 +134,8 @@ export default function Trainings() {
                   </div>
                 </div>
               </div>
-              <div className="col-md-4">
+              <div className="col-md-4"
+                style={{backgroundColor: '#ffffff'}}>
                 <OtherCourses />
               </div>
             </div>

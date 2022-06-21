@@ -52,7 +52,7 @@ export default function NavTraining() {
                     cursor: 'pointer',
                   }}
                 >
-                  <a href="https://t.me/EWiTAnnounce" target="_blank" rel="noreferrer" style={{ color: '#6c757d' }}>
+                  <a href="https://t.me/EWiTAnnounce" target="_blank" rel="noreferrer" style={{ color: '#9268A7' }}>
                     {' '}
                     <FaTelegram size={30} />
                   </a>

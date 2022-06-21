@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import Client from '../Client'
 import { BsFillRecordFill } from 'react-icons/bs'
+import { FcApproval } from 'react-icons/fc'
 import './coursecard.css'
 import { Link } from 'react-router-dom'
 
@@ -61,7 +62,7 @@ export default function CourseCards() {
                   )}
 
                   <div className="active-icon">
-                    <BsFillRecordFill />
+                    <FcApproval size={30}/>
                   </div>
                   <div className="card-body position-relative">
                     {cards.mainImage && cards.mainImage.asset && (
@@ -79,7 +80,7 @@ export default function CourseCards() {
                       to={{ pathname: `/tarining-area/${cards.slug.current}` }}
                       style={{ textDecoration: 'none' }}
                     >
-                      <h5 style={{ color: '#333333', marginTop: '20px' }}>
+                      <h5 style={{ color: '#333333', marginTop: '20px', paddingBottom: "10px", borderBottom: "2px solid", }}>
                         {cards.title}
                       </h5>
                       <p

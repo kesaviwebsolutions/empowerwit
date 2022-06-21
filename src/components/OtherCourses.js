@@ -14,7 +14,7 @@ export default function OtherCourses() {
             <div className="share-area">
               <h3 style={{ marginTop: "10px", borderBottom: "1px solid", color:"#9268A7" }}>Share this training</h3>
             </div>
-            <div className="social-links" style={{marginTop: "-15px", color:"#9268A7" }}>
+            <div className="social-links" style={{marginTop: "-10px", color:"#9268A7" }}>
               {/* <a href="/" className='link-item' target="_blank" rel="noreferrer"><FaLinkedin /></a> */}
               <a href="https://www.facebook.com/100173285999843/posts/129509603066211" className='link-item' target="_blank" rel="noreferrer"><FaFacebookSquare /></a>
               <a href="https://www.instagram.com/empowerwit2022/?igshid=YmMyMTA2M2Y" className='link-item' target="_blank" rel="noreferrer"><FaInstagramSquare /></a>

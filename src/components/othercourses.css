@@ -2,16 +2,14 @@
 @import '~slick-carousel/slick/slick-theme.css';
 
 .similar-sliders {
-  margin-top: 36px;
+  margin-top: 50px;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
   padding-bottom: 10px;
 }
 .st-heading {
-  background: #9268A7;
-  color: #fff;
-  border-top-right-radius: 5px;
+  color: #333333;
 }
 .waiting-icon {
   position: absolute;
@@ -22,7 +20,7 @@
 img.mentor-img {
   position: absolute;
   top: 35%;
-  left: 10px;
+  left: 5px;
   width: 20%;
   border: 1px solid;
   background: #333333;
@@ -35,13 +33,14 @@ img.mentor-img {
   top: 45%;
   right: 0;
   width: 85%;
+  height: 12%;
 }
 .link-item {
   font-size: 40px;
-  margin-left: 5px;
-  color: #ffff;
+  margin-left: 10px;
+  color: #9268A7;
   transition: 0.5s;
 }
 .link-item:hover {
-  color: #ffff;
+  color: #333333;
 }

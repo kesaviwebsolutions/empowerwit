@@ -1,5 +1,5 @@
 import React from "react";
-import img7 from "./images/img7.png";
+import img9 from "./images/img9.png";
 import "./courses.css";
 import RegisterContent from "./RegisterContent";
 import { FaTelegram } from "react-icons/fa";
@@ -12,7 +12,7 @@ export default function NavCourse() {
         <nav className="navbar navbar-expand-lg bg-transparent">
           <div className="container">
             <a className="navbar-brand" href="/">
-              <img src={img7} alt="" className="course-img" />
+              <img src={img9} alt="" className="course-img" />
             </a>
             <button
               className="navbar-toggler"
@@ -56,7 +56,7 @@ export default function NavCourse() {
                     href="https://t.me/EWiTAnnounce"
                     target="_blank"
                     rel="noreferrer"
-                    style={{ color: "#6c757d" }}
+                    style={{ color: "#9268A7" }}
                   >
                     {" "}
                     <FaTelegram size={30} />
