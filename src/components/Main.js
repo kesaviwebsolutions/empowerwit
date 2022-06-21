@@ -16,7 +16,7 @@ export default function Main() {
             </div>
         </div>
       </section>
-        <Bottom />
+        <Bottom/>
     </div>
   );
 }

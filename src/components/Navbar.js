@@ -114,9 +114,9 @@ export default function Navbar() {
           aria-hidden="true"
         >
           <div className="modal-dialog modal-dialog-centered">
-            <div className="modal-content">
+            <div className="modal-content" style={{ backgroundImage: 'linear-gradient(#F2C8D5, #FFFFFF)'}}>
               <div className="modal-header">
-                <h5 className="modal-title ms-auto" id="exampleModalLabel" style={{color: '#d44a73'}}>
+                <h5 className="modal-title ms-auto" id="exampleModalLabel" style={{color: '#333333'}}>
                   Registration Form
                 </h5>
                 <button
@@ -135,7 +135,7 @@ export default function Navbar() {
           <div className="modal-dialog">
             <div className="modal-content">
               <div className="modal-header">
-                <h5 className="modal-title ms-auto" id="exampleModalLabel" style={{color: '#d44a73'}}>
+                <h5 className="modal-title ms-auto" id="exampleModalLabel" style={{color: '#9268A7'}}>
                   Contact Us
                 </h5>
                 <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>

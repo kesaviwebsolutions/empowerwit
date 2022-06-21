@@ -1,8 +1,4 @@
 import React from 'react'
-import img11 from '../images/img11.png'
-import img3 from '../images/img3.png'
-import img8 from '../images/img8.png'
-import desktop from '../images/desktop.png'
 import Vision from '../Vision'
 
 export default function About() {
@@ -12,11 +8,7 @@ export default function About() {
         <div id="about-us">
           <div className="container">
             <div className="row">
-              <div className="col-md-4">
-                <div className="about-imgs">
-                  <img src={img11} alt="" className="about-img" />
-                  <img src={img3} alt="" className="wi" />
-                </div>
+              <div className="col-md-3">
               </div>
               <div className="col-md-8">
                 <div className="about-area">
@@ -24,10 +16,10 @@ export default function About() {
                     <div className="col-md-6">
                       <div className="about-content">
                         <div className="content">
-                          <h2 style={{ color: '#0071BC', fontWeight: '700' }}>
+                          <h2 style={{ color: '#333333', fontWeight: '700' }}>
                             Who are we ?
                           </h2>
-                          <p style={{ fontFamily: 'Futura Lt BT' }}>
+                           <p className='abt'>
                             EmpowerWIT is a social movement aimed to empower
                             women/housewives by training them in the filed on
                             Information Technolgoy and equip them with skills to
@@ -36,7 +28,7 @@ export default function About() {
                           </p>
                         </div>
                         <div className="content" style={{ marginTop: '50px' }}>
-                          <h2 style={{ color: '#0071BC', fontWeight: '700' }}>
+                          <h2 style={{ color: '#333333', fontWeight: '700' }}>
                             Why Empowerit ?
                           </h2>
 
@@ -45,7 +37,7 @@ export default function About() {
                               className="content-heading"
                               style={{ marginTop: '50px' }}
                             >
-                              <h5 style={{ color: '#554c4c' }}>
+                              <h5 style={{ color: '#333333' }}>
                                 Time Constraint
                               </h5>
                               <p className='abt'>
@@ -63,13 +55,10 @@ export default function About() {
                       </div>
                     </div>
                     <div className="col-md-6">
-                      <div className="desktop-img">
-                        <img src={desktop} alt="" className="di" />
-                      </div>
-                      <div className="Questions" style={{ marginTop: '85px' }}>
+                      <div className="Questions" style={{ marginTop: '400px' }}>
                         <div className="content-heading2">
                           <div className="content-heading">
-                            <h5 style={{ color: '#554c4c' }}>
+                            <h5 style={{ color: '#333333' }}>
                               Family Obligations
                             </h5>
                             <p style={{ width: '100%' }}>
@@ -77,7 +66,7 @@ export default function About() {
                               realising their dreams.
                             </p>
                             <div className="content-heading">
-                              <h5 style={{ color: '#554c4c' }}>
+                              <h5 style={{ color: '#333333' }}>
                                 Financial Dependence
                               </h5>
                               <p style={{ width: '100%' }}>
@@ -88,9 +77,6 @@ export default function About() {
                           </div>
                         </div>
                       </div>
-                      <div className="empower-img">
-                        <img src={img8} alt="" className="ei" />
-                      </div>
                     </div>
                   </div>
                 </div>
@@ -99,7 +85,6 @@ export default function About() {
           </div>
         </div>
       </section>
-
       <Vision />
     </div>
   )
