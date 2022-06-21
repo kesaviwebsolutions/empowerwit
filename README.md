@@ -1,7 +1,6 @@
 # Empowerit : Empowering Women Around The World
 
-Inline-style: 
-![alt text](https://github.com/DavidNJoiner/empowerit/src/components/images/landing.png "LandingPage")
+![alt text][landing]
 
 ## RUN:
 
