@@ -1,6 +1,6 @@
 # Empowerit : Empowering Women Around The World
 
-<img src="components/images/landing.png">
+![alt text]([http://url](https://github.com/DavidNJoiner/empowerit/components/images/landing.png)
 
 ## RUN:
 
