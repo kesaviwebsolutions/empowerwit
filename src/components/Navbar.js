@@ -1,6 +1,5 @@
 import React from 'react'
 import img from './images/img9.png'
-
 import RegisterContent from './RegisterContent'
 import ContactUs from './ContactUs'
 import { FaTelegram } from 'react-icons/fa'
