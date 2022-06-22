@@ -5,14 +5,14 @@
   word-wrap: break-word;
   background-color: #fff !important;
   background-clip: border-box;
-  border: 3px solid rgba(0, 0, 0, 0.125);
+  border: 3px solid rgba(255, 8, 8, 0.125);
   border-radius: 5px !important;
 }
 .intro {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 2px solid;
+  border-bottom: 1px solid;
 }
 .content-area {
   padding: 40px 40px;
@@ -90,7 +90,7 @@ button:hover {
 .tac {
   display: flex;
   align-items: flex-start;
-  margin-top: 30px;
+  margin-top: 10px;
   justify-content: space-between;
 }
 p.cc-d {
