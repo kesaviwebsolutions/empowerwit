@@ -55,6 +55,7 @@ export default function CourseCards() {
                       alt="..."
                       style={{
                         maxHeight: '150px',
+                        paddingTop: '12px',
                         borderTopLeftRadius: '5px',
                         borderTopRightRadius: '5px',
                       }}
@@ -90,7 +91,7 @@ export default function CourseCards() {
                         {cards.description}
                       </p>
                     </Link>
-                    <div className="duration" style={{ marginTop: '30px' }}>
+                    <div className="duration" style={{ marginTop: '30px'}}>
                       <div className="duration-time">
                         <b>{cards.duration}</b>{' '}
                         <span className="time">{cards.time}</span>

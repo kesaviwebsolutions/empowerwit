@@ -1,14 +1,11 @@
 .homeCards .card {
-  width: 18rem !important; 
-  padding: 0px !important;
+  width: 20rem !important; 
   border: none;
   margin-top: 50px !important;
   border-radius: 5px;
-  margin-right: 40px;
-  margin-left: 60px;
+  margin-right: 30px;
+  margin-left: 30px;
 }
-
-
 img.icon {
   width: 28%;
   background: #333333;
@@ -21,7 +18,7 @@ img.icon {
 }
 .active-icon {
   position: absolute;
-  right: 10px;
+  right: 20px;
   top: 10px;
 }
 .st {
