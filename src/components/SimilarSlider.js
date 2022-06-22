@@ -53,7 +53,7 @@ export default function SimilarSlider() {
     <div>
       <div className="similar-sliders">
         <div className="st-heading">
-            <h3 style={{ marginTop: "10px", marginBottom: "30px", borderBottom: "1px solid", color:"#9268A7" }}>Similar trainings</h3>
+            <h3 style={{ marginTop: "10px", marginBottom: "20px", borderBottom: "1px solid", color:"#333333" }}>Similar trainings</h3>
         </div>
         <Slider
           dots={false}
@@ -70,7 +70,7 @@ export default function SimilarSlider() {
                 style={{
                   width: '22rem',
                   borderRadius: '5px',
-                  border: '1px solid',
+                  
                 }}
               >
                 {console.log(window.location.pathname.includes(similarCards.slug.current))}
@@ -101,7 +101,7 @@ export default function SimilarSlider() {
                 <div className="mentor-name">
                   <span
                     className="mn"
-                    style={{ paddingLeft: '35px', color: '#fff' }}
+                    style={{ paddingLeft: '90px', color: '#fff' }}
                   >
                     {similarCards.mentor}
                   </span>
@@ -118,8 +118,6 @@ export default function SimilarSlider() {
                           fontSize: '20px',
                           color: '#333333',
                           marginTop: '20px',
-                          paddingBottom: "10px",
-                          borderBottom: "2px solid",
                         }}
                       >
                         {similarCards.title}
