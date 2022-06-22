@@ -48,11 +48,11 @@ export default function Trainings() {
         <div className="container">
           <div
             className="training-area"
-            style={{ backgroundImage: 'linear-gradient(#F2C8D5, #FFFFFF)' }}
-          >
+            style={{ backgroundColor: '#ffffff'}}>
             <div className="row">
               <div className="col-md-8">
-                <div className="content-area">
+                <div className="content-area"
+                  style={{ backgroundColor: '#f2c8d57f'}}>{/* test color #F2C8D5*/}
                   <div className="img-text">
                     <div className="imgimg">
                       {cardContent.mainImage2 &&
@@ -71,6 +71,8 @@ export default function Trainings() {
                         style={{
                           fontSize: '20px',
                           color: '#8bc34a',
+                          float: 'right',
+                          paddingRight: '10px',
                         }}
                       >
                         Session available{' '}
@@ -134,8 +136,13 @@ export default function Trainings() {
                   </div>
                 </div>
               </div>
-              <div className="col-md-4"
-                style={{backgroundColor: '#ffffff'}}>
+              <div className="col-md-4" /*  Other courses panel */
+                style={{
+                  backgroundColor: '#ffffff',
+                  borderStyle: 'solid',
+                  borderColor: '#333333',
+                  borderWidth: '2px',
+                  borderRadius: '10px'}}>
                 <OtherCourses />
               </div>
             </div>
