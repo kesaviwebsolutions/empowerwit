@@ -1,5 +1,5 @@
 import React from 'react'
-import img9 from './images/img9.png'
+import logo from './images/logo.png'
 import './courses.css'
 import RegisterContent from './RegisterContent'
 import { FaTelegram } from 'react-icons/fa'
@@ -12,7 +12,7 @@ export default function NavTraining() {
         <nav className="navbar navbar-expand-lg bg-transparent">
           <div className="container">
             <a className="navbar-brand" href="/">
-              <img src={img9} alt="" className="course-img" />
+              <img src={logo} alt="" className="course-img" />
             </a>
             <button
               className="navbar-toggler"
