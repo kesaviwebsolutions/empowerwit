@@ -31,14 +31,13 @@ img.mentor-img {
   background: #9268A7;
   position: absolute;
   top: 45%;
-  right: 0;
-  width: 85%;
-  height: 12%;
+  width: 100%;
+  height: 15%;
 }
 .link-item {
   font-size: 40px;
   margin-left: 10px;
-  color: #9268A7;
+  color: #ffffff;
   transition: 0.5s;
 }
 .link-item:hover {
