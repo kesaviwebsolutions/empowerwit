@@ -43,8 +43,7 @@ export default function MobileRoadmap() {
 
                       <p>
                         Collaborations with NGOs to promote
-                        digital literacy among women.ewives to
-                        become leaders in IT.
+                        digital literacy among graduate housewives to become leaders in IT.
                       </p>
                     </VerticalTimelineElement>
                     <VerticalTimelineElement

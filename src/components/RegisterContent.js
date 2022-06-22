@@ -202,8 +202,8 @@ export default function RegisterContent() {
             </label>
             <select id="inputState" className="form-select">
               <option>Choose...</option>
-              <option>Employeed</option>
-              <option>Unemployeed</option>
+              <option>Employed</option>
+              <option>Unemployed</option>
             </select>
           </div>
           <div className="col-12">
