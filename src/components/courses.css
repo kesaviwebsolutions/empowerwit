@@ -20,8 +20,8 @@ img.course-img {
   margin-left: 10px;
 }
 .training-section {
-  padding: 19px 10px;
-  background-image: linear-gradient(#F2C8D5, #ffffff);
+  padding: 20px 50px;
+  background-color: #f2c8d57f;
 }
 
 @media screen and (max-width: 480px) {
