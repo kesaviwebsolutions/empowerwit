@@ -8,7 +8,7 @@ export default function Mobilecontact() {
         <div className="mobile-img">
 
           <div className="container">
-            <h1 className="text-center py-5  my-2 " style={{fontSize:'40px', fontWeight:"700", color:"rgb(212, 74, 115)"}}>CONTACT-US</h1>
+            <h1 className="text-center py-5  my-2 " style={{ fontSize: '40px', fontWeight: "700", color: "rgb(212, 74, 115)" }}>CONTACT-US</h1>
             <form
               target="_blank"
               action="https://formsubmit.co/el/momeha"
@@ -47,8 +47,8 @@ export default function Mobilecontact() {
               </div>
               <button
                 type="submit"
-                className="btn btn-lg btn-secondary btn-block my-3"
-                style={{ marginTop: "20px", background:"blue" }}
+                className="btn btn-outline-danger my-3"
+
               >
                 Submit
               </button>

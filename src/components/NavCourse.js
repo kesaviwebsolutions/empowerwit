@@ -11,9 +11,9 @@ export default function NavCourse() {
       <section>
         <nav className="navbar navbar-expand-lg bg-transparent">
           <div className="container">
-            <a className="navbar-brand" href="/">
+            <Link className="navbar-brand" to="/">
               <img src={img9} alt="" className="course-img" />
-            </a>
+            </Link>
             <button
               className="navbar-toggler"
               type="button"
