@@ -188,7 +188,7 @@ export default function RegisterContent() {
           </div>
           <div className="col-md-6">
             <label htmlFor="inputState" className="form-label">
-              Martial Status
+              Marital Status
             </label>
             <select id="inputState" className="form-select">
               <option>Choose...</option>
