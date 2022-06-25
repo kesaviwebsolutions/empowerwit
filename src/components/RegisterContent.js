@@ -31,18 +31,24 @@ export default function RegisterContent() {
         <form
           className="row g-3"
           target="_blank"
-          action="https://formsubmit.co/el/momeha"
+          action="https://formsubmit.co/ajax/mayankbhati1911@gmail.com"
           method="POST"
         >
-          <div className="col-md-6">
+          {/* <form
+          className="row g-3"
+          target="_blank"
+          action="https://formsubmit.co/el/momeha"
+          method="POST"
+        ></form> */}
+          <div className="col-md-12">
             <label htmlFor="inputName4" className="form-label">
-              First Name
+              Full Name
             </label>
             <input
               type="name"
               className="form-control"
               id="inputName4"
-              placeholder="first name"
+              placeholder="full name"
             />
           </div>
           {/* <div className="col-md-6">
@@ -78,7 +84,7 @@ export default function RegisterContent() {
               placeholder="xxxxx-xxxxx"
             />
           </div>
-          <div className="col-md-12 d-flex justify-content-between">
+          {/* <div className="col-md-12 d-flex justify-content-between">
             <label htmlFor=""style={{color:"white"}}>Gender</label>
             <div className="form-check">
               <input
@@ -113,7 +119,7 @@ export default function RegisterContent() {
                 Male
               </label>
             </div>
-          </div>
+          </div> */}
           <div className="col-12">
             <label htmlFor="inputAddress" className="form-label">
               Address
@@ -180,12 +186,12 @@ export default function RegisterContent() {
               placeholder="qualification"
             />
           </div>
-          <div className="col-md-12">
+          {/* <div className="col-md-12">
             <label htmlFor="inputAddress2" className="form-label">
               Photo
             </label>
             <input type="file" className="form-control" id="inputPhoto2" />
-          </div>
+          </div> */}
           <div className="col-md-6">
             <label htmlFor="inputState" className="form-label">
               Marital Status
