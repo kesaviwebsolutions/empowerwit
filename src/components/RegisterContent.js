@@ -45,7 +45,7 @@ export default function RegisterContent() {
               placeholder="first name"
             />
           </div>
-          <div className="col-md-6">
+          {/* <div className="col-md-6">
             <label htmlFor="inputName4" className="form-label">
               Last Name
             </label>
@@ -55,7 +55,7 @@ export default function RegisterContent() {
               id="inputName4"
               placeholder="last name"
             />
-          </div>
+          </div> */}
           <div className="col-md-6">
             <label htmlFor="inputEmail4" className="form-label">
               Email
@@ -125,7 +125,7 @@ export default function RegisterContent() {
               placeholder="1234 Main St"
             />
           </div>
-          <div className="col-12">
+          {/* <div className="col-12">
             <label htmlFor="inputAddress2" className="form-label">
               Address 2
             </label>
@@ -135,7 +135,7 @@ export default function RegisterContent() {
               id="inputAddress2"
               placeholder="Apartment, studio, or floor"
             />
-          </div>
+          </div> */}
           <div className="col-md-6">
             <label htmlFor="inputAddress2" className="form-label">
               Country

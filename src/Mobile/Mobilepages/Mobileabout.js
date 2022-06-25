@@ -35,8 +35,8 @@ export default function Mobileabout() {
                             </h2>
                             <p style={{ fontSize: '17px' }}>
                               EmpowerWIT is a social movement aimed to empower
-                              women/housewives by training them in the filed on
-                              Information Technolgoy and equip them with skills to
+                              women/housewives by training them in the field of
+                              Information Technology and equip them with skills to
                               earn economic freedom while being around their
                               family.
                             </p>
@@ -44,7 +44,7 @@ export default function Mobileabout() {
 
                           <div className="content" style={{ marginTop: '50px' }}>
                             <h2 style={{ color: '#0071BC', fontWeight: '700' }}>
-                              Why Empowerit ?
+                              Why Empowerwit ?
                             </h2>
 
                             <div className="mobile-about-area">
