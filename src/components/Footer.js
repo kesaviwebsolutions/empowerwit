@@ -16,7 +16,7 @@ export default function Footer() {
           <div className="footer-logo">
             <img src={img9} alt="" className="fl" />
           </div>
-          <hr className='hr' />
+          <hr className="hr" />
           <div className="footer-links">
             <div className="footer-link-items">
               <ul className="footer-link-item">
@@ -69,6 +69,17 @@ export default function Footer() {
               >
                 <BsDiscord />
               </a>
+            </div>
+          </div>
+          <div className="contact-details text-center my-3">
+            <div className="details" style={{fontSize:"17px"}}>
+              <span className="more-info text-light">
+                More Info: +919990964432
+              </span>{' '}
+              <br />
+              <span className="info-contact text-light">
+                email: ewitofficial@gmail.com
+              </span>
             </div>
           </div>
         </div>
