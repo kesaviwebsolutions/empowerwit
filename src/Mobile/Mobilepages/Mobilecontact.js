@@ -11,7 +11,7 @@ export default function Mobilecontact() {
             <h1 className="text-center py-5  my-2 " style={{ fontSize: '40px', fontWeight: "700", color: "rgb(212, 74, 115)" }}>CONTACT-US</h1>
             <form
               target="_blank"
-              action="https://formsubmit.co/ajax/mayankbhati1911@gmail.com"
+              action="https://formsubmit.co/ajax/ewitofficial@gmail.com"
               method="POST"
             >
               <div className="form-group">

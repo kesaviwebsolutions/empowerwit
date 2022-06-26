@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 
 export default function RegisterContent() {
   // const [register, setRegister] = useState({
@@ -31,7 +31,7 @@ export default function RegisterContent() {
         <form
           className="row g-3"
           target="_blank"
-          action="https://formsubmit.co/ajax/mayankbhati1911@gmail.com"
+          action="https://formsubmit.co/ajax/ewitofficial@gmail.com"
           method="POST"
         >
           {/* <form
@@ -142,7 +142,7 @@ export default function RegisterContent() {
               placeholder="Apartment, studio, or floor"
             />
           </div> */}
-          <div className="col-md-6">
+          {/* <div className="col-md-6">
             <label htmlFor="inputAddress2" className="form-label">
               Country
             </label>
@@ -174,8 +174,8 @@ export default function RegisterContent() {
               id="inputCity2"
               placeholder="city"
             />
-          </div>
-          <div className="col-md-6">
+          </div> */}
+          <div className="col-md-12">
             <label htmlFor="inputAddress2" className="form-label">
               Qualification
             </label>
