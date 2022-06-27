@@ -72,12 +72,18 @@ export default function Footer() {
             </div>
           </div>
           <div className="contact-details text-center my-3">
-            <div className="details" style={{fontSize:"17px"}}>
-              <span className="more-info text-light">
-                More Info: +919990964432
+            <div className="details" style={{ fontSize: '17px' }}>
+              <span
+                className="more-info text-light"
+                style={{ lineHeight: '40px' }}
+              >
+                More Info: +919990964432 / +918368015441 <br />
               </span>{' '}
+              <span className="timings text-light">
+                Timings: 10:00 AM - 8:00 PM
+              </span>
               <br />
-              <span className="info-contact text-light">
+              <span className="info-contact text-light" style={{ lineHeight: '40px' }}>
                 email: ewitofficial@gmail.com
               </span>
             </div>

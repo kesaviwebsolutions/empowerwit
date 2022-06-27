@@ -29,18 +29,64 @@ export default function RegisterContent() {
     <div>
       <div className="container">
         <form
-          className="row g-3"
           target="_blank"
           action="https://formsubmit.co/ajax/ewitofficial@gmail.com"
           method="POST"
         >
+          <div className="form-group">
+            <div className="form-row">
+              <div className="col">
+                <input
+                  type="text"
+                  name="name"
+                  className="form-control"
+                  placeholder="Full Name"
+                  required
+                />
+              </div>
+              <div className="col" style={{ marginTop: '20px' }}>
+                <input
+                  type="email"
+                  name="email"
+                  className="form-control"
+                  placeholder="Email Address"
+                  required
+                />
+              </div>
+              <div className="col" style={{ marginTop: '20px' }}>
+                <input
+                  type="tel"
+                  name="phonenumber"
+                  className="form-control"
+                  placeholder="Phone Number"
+                  required
+                />
+              </div>
+              <div className="col" style={{ marginTop: '20px' }}>
+                <input
+                  type="text"
+                  name="address"
+                  className="form-control"
+                  placeholder="Address"
+                  required
+                />
+              </div>
+              <button
+                type="submit"
+                className="btn btn-lg btn-outline-light btn-block"
+                style={{ marginTop: '20px' }}
+              >
+                Register
+              </button>
+            </div>
+          </div>
           {/* <form
           className="row g-3"
           target="_blank"
           action="https://formsubmit.co/el/momeha"
           method="POST"
         ></form> */}
-          <div className="col-md-12">
+          {/* <div className="col-md-12">
             <label htmlFor="inputName4" className="form-label">
               Full Name
             </label>
@@ -50,7 +96,7 @@ export default function RegisterContent() {
               id="inputName4"
               placeholder="full name"
             />
-          </div>
+          </div> */}
           {/* <div className="col-md-6">
             <label htmlFor="inputName4" className="form-label">
               Last Name
@@ -62,7 +108,7 @@ export default function RegisterContent() {
               placeholder="last name"
             />
           </div> */}
-          <div className="col-md-6">
+          {/* <div className="col-md-6">
             <label htmlFor="inputEmail4" className="form-label">
               Email
             </label>
@@ -83,7 +129,7 @@ export default function RegisterContent() {
               id="inputNumber4"
               placeholder="xxxxx-xxxxx"
             />
-          </div>
+          </div> */}
           {/* <div className="col-md-12 d-flex justify-content-between">
             <label htmlFor=""style={{color:"white"}}>Gender</label>
             <div className="form-check">
@@ -120,7 +166,7 @@ export default function RegisterContent() {
               </label>
             </div>
           </div> */}
-          <div className="col-12">
+          {/* <div className="col-12">
             <label htmlFor="inputAddress" className="form-label">
               Address
             </label>
@@ -130,7 +176,7 @@ export default function RegisterContent() {
               id="inputAddress"
               placeholder="1234 Main St"
             />
-          </div>
+          </div> */}
           {/* <div className="col-12">
             <label htmlFor="inputAddress2" className="form-label">
               Address 2
@@ -175,7 +221,7 @@ export default function RegisterContent() {
               placeholder="city"
             />
           </div> */}
-          <div className="col-md-12">
+          {/* <div className="col-md-12">
             <label htmlFor="inputAddress2" className="form-label">
               Qualification
             </label>
@@ -185,14 +231,14 @@ export default function RegisterContent() {
               id="inputQualification2"
               placeholder="qualification"
             />
-          </div>
+          </div> */}
           {/* <div className="col-md-12">
             <label htmlFor="inputAddress2" className="form-label">
               Photo
             </label>
             <input type="file" className="form-control" id="inputPhoto2" />
           </div> */}
-          <div className="col-md-6">
+          {/* <div className="col-md-6">
             <label htmlFor="inputState" className="form-label">
               Marital Status
             </label>
@@ -226,7 +272,7 @@ export default function RegisterContent() {
             <button type="submit" className="btn btn-outline-light">
               Register
             </button>
-          </div>
+          </div>*/}
         </form>
       </div>
     </div>
