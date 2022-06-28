@@ -29,15 +29,15 @@ export default function About() {
                           </h2>
                           <p style={{ fontFamily: 'Futura Lt BT' }}>
                             EmpowerWIT is a social movement aimed to empower
-                            women/housewives by training them in the filed on
-                            Information Technolgoy and equip them with skills to
+                            women/housewives by training them in the field of
+                            Information Technology and equip them with skills to
                             earn economic freedom while being around their
                             family
                           </p>
                         </div>
                         <div className="content" style={{ marginTop: '50px' }}>
                           <h2 style={{ color: '#0071BC', fontWeight: '700' }}>
-                            Why Empowerit ?
+                            Why Empowerwit ?
                           </h2>
 
                           <div className="Questions">
@@ -49,7 +49,7 @@ export default function About() {
                                 Time Constraint
                               </h5>
                               <p className='abt'>
-                                Unabity to devote time to self development and
+                                Unabated to devote time to self development and
                                 move towards financial independence.
                               </p>
                               <p className='abt'>
