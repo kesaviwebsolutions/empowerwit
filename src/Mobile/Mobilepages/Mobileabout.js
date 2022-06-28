@@ -51,7 +51,7 @@ export default function Mobileabout() {
                               <div className="mobileabout-paragraph">
                                 <h4>Time Constraint</h4>
                                 <p style={{ fontSize: '17px' }}>
-                                  Unabity to devote time to self development and
+                                  Unabated to devote time to self development and
                                   move towards financial independence. A number of
                                   housewives are devoid of ample opportunities
                                   despite being adequately qualified.

@@ -21,7 +21,7 @@ export default function MobileMain() {
                   <div className="mobile-img">
                     <img src={img9} alt="" className="mi" />
                     <span className="tagline">
-                      Empowering Women Around The World
+                    Empowering Women Around The World
                     </span>
                   </div>
                   <div className="mobile-img">
