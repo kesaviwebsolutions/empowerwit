@@ -1,30 +1,13 @@
 import React from 'react'
-import { useForm } from 'react-hook-form'
-import './registercontent.css'
 
 export default function RegisterContent() {
-  const {
-    register,
-    handleSubmit,
-    reset,
-    trigger,
-    formState: { errors },
-  } = useForm()
-
-  const onSubmit = (data) => {
-    console.log(data)
-    reset()
-  }
-
-  // console.log(errors)
   return (
     <div>
       <div className="container">
         <form
           target="_blank"
-          action="https://formsubmit.co/ajax/ewitofficial@gmail.com"
+          // action="https://formsubmit.co/ajax/ewitofficial@gmail.com"
           method="POST"
-          onSubmit={handleSubmit(onSubmit)}
         >
           <div className="form-group">
             <div className="form-row">
@@ -34,18 +17,8 @@ export default function RegisterContent() {
                   name="name"
                   className="form-control"
                   placeholder="Full Name"
-                  {...register('fullName', {
-                    required: 'Please enter your full name',
-                  })}
-                  onKeyUp={() => {
-                    trigger('fullName')
-                  }}
+                  required
                 />
-                {errors.fullName && (
-                  <small className="text-danger">
-                    {errors.fullName.message}
-                  </small>
-                )}
               </div>
               <div className="col" style={{ marginTop: '20px' }}>
                 <input
@@ -53,41 +26,18 @@ export default function RegisterContent() {
                   name="email"
                   className="form-control"
                   placeholder="Email Address"
-                  {...register('email', {
-                    required: 'Please enter your email.',
-                    pattern: {
-                      value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
-                      message: 'Please enter valid email',
-                    },
-                  })}
-                  onKeyUp={() => {
-                    trigger('email')
-                  }}
+                  required
                 />
-                {errors.email && (
-                  <small className="text-danger">{errors.email.message}</small>
-                )}
               </div>
               <div className="col" style={{ marginTop: '20px' }}>
                 <input
-                  type="tel"
+                  type="number"
                   name="phonenumber"
+                  maxLength="10"
                   className="form-control"
                   placeholder="Phone Number"
-                  {...register('phone', {
-                    required: 'Please enter your phone number.',
-                    pattern: {
-                      value: /^\s*(?:\+?(\d{1,3}))?[-. (]*(\d{3})[-. )]*(\d{3})[-. ]*(\d{4})(?: *x(\d+))?\s*$/,
-                      message: 'only numbers are allowed up to 10 digit ',
-                    },
-                  })}
-                  onKeyUp={() => {
-                    trigger('phone')
-                  }}
+                  required
                 />
-                {errors.phone && (
-                  <small className="text-danger">{errors.phone.message}</small>
-                )}
               </div>
               <div className="col" style={{ marginTop: '20px' }}>
                 <input
@@ -95,18 +45,8 @@ export default function RegisterContent() {
                   name="address"
                   className="form-control"
                   placeholder="Address"
-                  {...register('address', {
-                    required: 'Please enter your address.',
-                  })}
-                  onKeyUp={() => {
-                    trigger('address')
-                  }}
+                  required
                 />
-                {errors.address && (
-                  <small className="text-danger">
-                    {errors.address.message}
-                  </small>
-                )}
               </div>
               <button
                 type="submit"
