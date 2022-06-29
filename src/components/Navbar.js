@@ -70,7 +70,7 @@ export default function Navbar() {
                   </Link>
 
                 </li>
-                <li className="nav-item">
+                {/* <li className="nav-item">
                   <Link to="/user-profile"
                     className="nav-link active"
                     aria-current="page"
@@ -78,7 +78,7 @@ export default function Navbar() {
                     User Profile
                   </Link>
 
-                </li>
+                </li> */}
                 <div
                   className="btn-sign"
                   style={{

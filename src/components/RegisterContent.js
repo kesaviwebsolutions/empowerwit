@@ -6,7 +6,7 @@ export default function RegisterContent() {
       <div className="container">
         <form
           target="_blank"
-          // action="https://formsubmit.co/ajax/ewitofficial@gmail.com"
+          action="https://formsubmit.co/ajax/ewitofficial@gmail.com"
           method="POST"
         >
           <div className="form-group">
