@@ -70,6 +70,15 @@ export default function Navbar() {
                   </Link>
 
                 </li>
+                <li className="nav-item">
+                  <Link to="/user-profile"
+                    className="nav-link active"
+                    aria-current="page"
+                  >
+                    User Profile
+                  </Link>
+
+                </li>
                 <div
                   className="btn-sign"
                   style={{
@@ -110,7 +119,7 @@ export default function Navbar() {
               </div>
             </div>
           </div>
-         
+
         </nav>
         {/* MODAL */}
         <div

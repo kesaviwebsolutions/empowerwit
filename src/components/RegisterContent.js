@@ -1,30 +1,22 @@
 import React from 'react'
+import { useForm } from 'react-hook-form'
+import './registercontent.css'
 
 export default function RegisterContent() {
-  // const [register, setRegister] = useState({
-  //   name: '',
-  //   lastname: '',
-  //   email: '',
-  //   phonenumber: '',
-  //   address: '',
-  //   address2: '',
-  //   workingstatus: '',
-  //   maritalstatus: '',
-  // })
-  // const [records, setRecords] = useState([])
-  // const handleInput = (e) => {
-  //   const name = e.target.name
-  //   const value = e.target.value
+  const {
+    register,
+    handleSubmit,
+    reset,
+    trigger,
+    formState: { errors },
+  } = useForm()
 
-  //   setRegister({ ...register, [name]: value })
-  // }
+  const onSubmit = (data) => {
+    console.log(data)
+    reset()
+  }
 
-  // const handleSubmit = (e) => {
-  //   e.preventDefault()
-  //   const newRecord = { ...register, id: new Date().getTime().toString() }
-  //   console.log(records)
-  //   setRecords({ ...records, newRecord })
-  // }
+  // console.log(errors)
   return (
     <div>
       <div className="container">
@@ -32,6 +24,7 @@ export default function RegisterContent() {
           target="_blank"
           action="https://formsubmit.co/ajax/ewitofficial@gmail.com"
           method="POST"
+          onSubmit={handleSubmit(onSubmit)}
         >
           <div className="form-group">
             <div className="form-row">
@@ -41,8 +34,18 @@ export default function RegisterContent() {
                   name="name"
                   className="form-control"
                   placeholder="Full Name"
-                  required
+                  {...register('fullName', {
+                    required: 'Please enter your full name',
+                  })}
+                  onKeyUp={() => {
+                    trigger('fullName')
+                  }}
                 />
+                {errors.fullName && (
+                  <small className="text-danger">
+                    {errors.fullName.message}
+                  </small>
+                )}
               </div>
               <div className="col" style={{ marginTop: '20px' }}>
                 <input
@@ -50,8 +53,20 @@ export default function RegisterContent() {
                   name="email"
                   className="form-control"
                   placeholder="Email Address"
-                  required
+                  {...register('email', {
+                    required: 'Please enter your email.',
+                    pattern: {
+                      value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
+                      message: 'Please enter valid email',
+                    },
+                  })}
+                  onKeyUp={() => {
+                    trigger('email')
+                  }}
                 />
+                {errors.email && (
+                  <small className="text-danger">{errors.email.message}</small>
+                )}
               </div>
               <div className="col" style={{ marginTop: '20px' }}>
                 <input
@@ -59,8 +74,20 @@ export default function RegisterContent() {
                   name="phonenumber"
                   className="form-control"
                   placeholder="Phone Number"
-                  required
+                  {...register('phone', {
+                    required: 'Please enter your phone number.',
+                    pattern: {
+                      value: /^\s*(?:\+?(\d{1,3}))?[-. (]*(\d{3})[-. )]*(\d{3})[-. ]*(\d{4})(?: *x(\d+))?\s*$/,
+                      message: 'only numbers are allowed up to 10 digit ',
+                    },
+                  })}
+                  onKeyUp={() => {
+                    trigger('phone')
+                  }}
                 />
+                {errors.phone && (
+                  <small className="text-danger">{errors.phone.message}</small>
+                )}
               </div>
               <div className="col" style={{ marginTop: '20px' }}>
                 <input
@@ -68,8 +95,18 @@ export default function RegisterContent() {
                   name="address"
                   className="form-control"
                   placeholder="Address"
-                  required
+                  {...register('address', {
+                    required: 'Please enter your address.',
+                  })}
+                  onKeyUp={() => {
+                    trigger('address')
+                  }}
                 />
+                {errors.address && (
+                  <small className="text-danger">
+                    {errors.address.message}
+                  </small>
+                )}
               </div>
               <button
                 type="submit"
@@ -80,199 +117,6 @@ export default function RegisterContent() {
               </button>
             </div>
           </div>
-          {/* <form
-          className="row g-3"
-          target="_blank"
-          action="https://formsubmit.co/el/momeha"
-          method="POST"
-        ></form> */}
-          {/* <div className="col-md-12">
-            <label htmlFor="inputName4" className="form-label">
-              Full Name
-            </label>
-            <input
-              type="name"
-              className="form-control"
-              id="inputName4"
-              placeholder="full name"
-            />
-          </div> */}
-          {/* <div className="col-md-6">
-            <label htmlFor="inputName4" className="form-label">
-              Last Name
-            </label>
-            <input
-              type="name"
-              className="form-control"
-              id="inputName4"
-              placeholder="last name"
-            />
-          </div> */}
-          {/* <div className="col-md-6">
-            <label htmlFor="inputEmail4" className="form-label">
-              Email
-            </label>
-            <input
-              type="email"
-              className="form-control"
-              id="inputEmail4"
-              placeholder="email"
-            />
-          </div>
-          <div className="col-md-6">
-            <label htmlFor="inputNumber4" className="form-label">
-              Phone Number
-            </label>
-            <input
-              type="tel"
-              className="form-control"
-              id="inputNumber4"
-              placeholder="xxxxx-xxxxx"
-            />
-          </div> */}
-          {/* <div className="col-md-12 d-flex justify-content-between">
-            <label htmlFor=""style={{color:"white"}}>Gender</label>
-            <div className="form-check">
-              <input
-                className="form-check-input"
-                type="radio"
-                name="flexRadioDefault"
-                id="flexRadioDefault1"
-              />
-              <label className="form-check-label" htmlFor="flexRadioDefault1">
-                Female
-              </label>
-            </div>
-            <div className="form-check">
-              <input
-                className="form-check-input"
-                type="radio"
-                name="flexRadioDefault"
-                id="flexRadioDefault2"
-              />
-              <label className="form-check-label" htmlFor="flexRadioDefault2">
-                Others
-              </label>
-            </div>
-            <div className="form-check">
-              <input
-                className="form-check-input"
-                type="radio"
-                name="flexRadioDefault"
-                id="flexRadioDefault2"
-              />
-              <label className="form-check-label" htmlFor="flexRadioDefault2">
-                Male
-              </label>
-            </div>
-          </div> */}
-          {/* <div className="col-12">
-            <label htmlFor="inputAddress" className="form-label">
-              Address
-            </label>
-            <input
-              type="text"
-              className="form-control"
-              id="inputAddress"
-              placeholder="1234 Main St"
-            />
-          </div> */}
-          {/* <div className="col-12">
-            <label htmlFor="inputAddress2" className="form-label">
-              Address 2
-            </label>
-            <input
-              type="text"
-              className="form-control"
-              id="inputAddress2"
-              placeholder="Apartment, studio, or floor"
-            />
-          </div> */}
-          {/* <div className="col-md-6">
-            <label htmlFor="inputAddress2" className="form-label">
-              Country
-            </label>
-            <input
-              type="text"
-              className="form-control"
-              id="inputCountry2"
-              placeholder="country"
-            />
-          </div>
-          <div className="col-md-6">
-            <label htmlFor="inputAddress2" className="form-label">
-              State
-            </label>
-            <input
-              type="text"
-              className="form-control"
-              id="inputState2"
-              placeholder="state"
-            />
-          </div>
-          <div className="col-md-6">
-            <label htmlFor="inputAddress2" className="form-label">
-              City
-            </label>
-            <input
-              type="text"
-              className="form-control"
-              id="inputCity2"
-              placeholder="city"
-            />
-          </div> */}
-          {/* <div className="col-md-12">
-            <label htmlFor="inputAddress2" className="form-label">
-              Qualification
-            </label>
-            <input
-              type="text"
-              className="form-control"
-              id="inputQualification2"
-              placeholder="qualification"
-            />
-          </div> */}
-          {/* <div className="col-md-12">
-            <label htmlFor="inputAddress2" className="form-label">
-              Photo
-            </label>
-            <input type="file" className="form-control" id="inputPhoto2" />
-          </div> */}
-          {/* <div className="col-md-6">
-            <label htmlFor="inputState" className="form-label">
-              Marital Status
-            </label>
-            <select id="inputState" className="form-select">
-              <option>Choose...</option>
-              <option>Married</option>
-              <option>Unmarried</option>
-            </select>
-          </div>
-          <div className="col-md-6">
-            <label htmlFor="inputState" className="form-label">
-              Working Status
-            </label>
-            <select id="inputState" className="form-select">
-              <option>Choose...</option>
-              <option>Employed</option>
-              <option>Unemployed</option>
-            </select>
-          </div>
-          <div className="col-12">
-            <label htmlFor="inputState" className="form-label">
-              Do you have computer/laptop
-            </label>
-            <select id="inputState" className="form-select">
-              <option>Choose...</option>
-              <option>Yes</option>
-              <option>No</option>
-            </select>
-          </div>
-          <div className="col-12">
-            <button type="submit" className="btn btn-outline-light">
-              Register
-            </button>
-          </div>*/}
         </form>
       </div>
     </div>
