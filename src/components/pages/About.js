@@ -49,7 +49,7 @@ export default function About() {
                                 Time Constraint
                               </h5>
                               <p className='abt'>
-                                Unabated to devote time to self development and
+                                Unable to devote time to self development and
                                 move towards financial independence.
                               </p>
                               <p className='abt'>
