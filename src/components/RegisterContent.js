@@ -55,6 +55,17 @@ export default function RegisterContent() {
               >
                 Register
               </button>
+              <div
+                className="btn-sign"
+                style={{
+                  marginTop: "0px",
+                  cursor: 'default',
+                }}
+              >
+                <button type="button" className="btn bg-transparent" data-bs-toggle="modal" data-bs-target="#registerModal" style={{ marginLeft: "0px", marginTop: "10px", fontFamily: 'Futura Lt BT', fontWeight: "700", color: '#fff' }}>
+                  Create your Profile
+                </button>
+              </div>
             </div>
           </div>
         </form>

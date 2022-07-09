@@ -5,6 +5,9 @@ import ContactUs from './ContactUs'
 import { FaTelegram } from 'react-icons/fa'
 import { Nav } from 'react-bootstrap'
 import { Link } from "react-router-dom"
+import UserProfileLogin from './pages/UserProfileLogin'
+import UserProfileRegister from './pages/UserProfileRegister'
+
 
 
 export default function Navbar() {
@@ -68,22 +71,11 @@ export default function Navbar() {
                   >
                     Courses
                   </Link>
-
                 </li>
-                {/* <li className="nav-item">
-                  <Link to="/user-profile"
-                    className="nav-link active"
-                    aria-current="page"
-                  >
-                    User Profile
-                  </Link>
-
-                </li> */}
                 <div
                   className="btn-sign"
                   style={{
                     marginTop: "0px",
-                    marginRight: '10px',
                     cursor: 'default',
                   }}
                 >
@@ -93,7 +85,6 @@ export default function Navbar() {
 
                 </div>
               </ul>
-
               <div className="buttons d-flex">
                 <div
                   className="btn-sign"
@@ -158,6 +149,38 @@ export default function Navbar() {
               </div>
               <div className="modal-body">
                 <ContactUs />
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* MODAL 3 */}
+        <div className="modal fade" id="registerModal" data-bs-backdrop="static" data-bs-keyboard="false" tabIndex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div className="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div className="modal-content">
+              <div className="modal-header">
+                <h5 className="modal-title ms-auto" id="exampleModalLabel" style={{ color: '#white' }}>
+                  Sing Up
+                </h5>
+                <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div className="modal-body">
+                <UserProfileRegister />
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* MODAL 4 */}
+        <div className="modal fade" id="loginModal" data-bs-backdrop="static" data-bs-keyboard="false" tabIndex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div className="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div className="modal-content">
+              <div className="modal-header">
+                <h5 className="modal-title ms-auto" id="exampleModalLabel" style={{ color: '#white' }}>
+                  LOGIN
+                </h5>
+                <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div className="modal-body">
+                <UserProfileLogin />
               </div>
             </div>
           </div>
