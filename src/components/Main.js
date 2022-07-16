@@ -1,14 +1,38 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import Bottom from "./Bottom";
-import img5 from "./images/img.png";
-import img6 from "./images/img9.png";
-import About from "./pages/About";
+import React, { useState } from 'react'
+import { Button } from 'react-bootstrap'
+import Modal from 'react-bootstrap/Modal'
+import UserProfileRegister from './pages/UserProfileRegister'
+import Bottom from './Bottom'
+import img5 from './images/img.png'
+import img6 from './images/img9.png'
+import About from './pages/About'
+import { useSelector } from 'react-redux'
+import { Link } from 'react-router-dom'
 
 export default function Main() {
+  const [show, setShow] = useState(false)
+  const handleClose = () => setShow(false)
+  const handleShow = () => setShow(true)
+
+  const userLogin = useSelector((state) => state.userLogin)
+  const { loading, error, userInfo } = userLogin
+
   return (
     <div>
       <section>
+        <Modal
+          show={show}
+          onHide={handleClose}
+          backdrop="static"
+          keyboard={false}
+        >
+          <Modal.Header closeButton>
+            <Modal.Title>Modal title</Modal.Title>
+          </Modal.Header>
+          <Modal.Body>
+            <UserProfileRegister />
+          </Modal.Body>
+        </Modal>
         <div className="container">
           <div className="row">
             <div className="col-md-4">
@@ -27,9 +51,34 @@ export default function Main() {
                 </p>
               </div>
               <div className="explore-buttons">
-                <Link to="/courses" className="btn">
-                  Explore our trainings
-                </Link>
+                {userLogin.userInfo ? (
+                  <Link
+                    to="/courses"
+                    style={{
+                      background: '#D44A73',
+                      border: 'none',
+                      fontSize: '18px',
+                      borderRadius: '25px',
+                      textDecoration: 'none',
+                      color: '#fff',
+                      padding: '10px 5px',
+                    }}
+                  >
+                    Explore our trainings
+                  </Link>
+                ) : (
+                  <Button
+                    onClick={handleShow}
+                    style={{
+                      background: '#D44A73',
+                      border: 'none',
+                      fontSize: '18px',
+                      borderRadius: '25px',
+                    }}
+                  >
+                    Explore our trainings
+                  </Button>
+                )}
               </div>
             </div>
           </div>
@@ -40,5 +89,5 @@ export default function Main() {
       </div>
       <Bottom />
     </div>
-  );
+  )
 }

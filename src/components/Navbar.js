@@ -1,16 +1,30 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+import { Button, NavDropdown } from 'react-bootstrap'
+import Modal from 'react-bootstrap/Modal'
 import img from './images/img9.png'
-import RegisterContent from './RegisterContent'
 import ContactUs from './ContactUs'
 import { FaTelegram } from 'react-icons/fa'
 import { Nav } from 'react-bootstrap'
-import { Link } from "react-router-dom"
+import { Link } from 'react-router-dom'
+import { logout } from '../actions/userActions'
+import { useDispatch, useSelector } from 'react-redux'
 import UserProfileLogin from './pages/UserProfileLogin'
-import UserProfileRegister from './pages/UserProfileRegister'
-
-
 
 export default function Navbar() {
+  const dispatch = useDispatch()
+
+  const userLogin = useSelector((state) => state.userLogin)
+  const { userInfo } = userLogin
+  const logoutHandler = () => {
+    dispatch(logout())
+  }
+
+  useEffect(() => {}, [userInfo])
+
+  const [show, setShow] = useState(false)
+  const handleClose = () => setShow(false)
+  const handleShow = () => setShow(true)
+
   return (
     <div>
       <section>
@@ -33,7 +47,8 @@ export default function Navbar() {
             <div className="collapse navbar-collapse" id="navbarNav">
               <ul className="navbar-nav m-auto">
                 <li className="nav-item">
-                  <Nav.Link href="#about-us"
+                  <Nav.Link
+                    href="#about-us"
                     className="nav-link active"
                     aria-current="page"
                   >
@@ -41,7 +56,8 @@ export default function Navbar() {
                   </Nav.Link>
                 </li>
                 <li className="nav-item">
-                  <Nav.Link href="#trainings"
+                  <Nav.Link
+                    href="#trainings"
                     className="nav-link active"
                     aria-current="page"
                   >
@@ -49,7 +65,8 @@ export default function Navbar() {
                   </Nav.Link>
                 </li>
                 <li className="nav-item">
-                  <Nav.Link href="#partners"
+                  <Nav.Link
+                    href="#partners"
                     className="nav-link active"
                     aria-current="page"
                   >
@@ -57,15 +74,18 @@ export default function Navbar() {
                   </Nav.Link>
                 </li>
                 <li className="nav-item">
-                  <Nav.Link href="#roadmap"
+                  <Nav.Link
+                    href="#roadmap"
                     className="nav-link active"
                     aria-current="page"
                   >
                     Roadmap
                   </Nav.Link>
                 </li>
+
                 <li className="nav-item">
-                  <Link to="/courses"
+                  <Link
+                    to="/courses"
                     className="nav-link active"
                     aria-current="page"
                   >
@@ -75,14 +95,24 @@ export default function Navbar() {
                 <div
                   className="btn-sign"
                   style={{
-                    marginTop: "0px",
+                    marginTop: '0px',
                     cursor: 'default',
                   }}
                 >
-                  <button type="button" className="btn bg-transparent" data-bs-toggle="modal" data-bs-target="#staticBackdrop" style={{ marginLeft: "50px", fontFamily: 'Futura Lt BT', fontWeight: "700", color: '#C3729D' }}>
+                  <button
+                    type="button"
+                    className="btn bg-transparent"
+                    data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop"
+                    style={{
+                      marginLeft: '50px',
+                      fontFamily: 'Futura Lt BT',
+                      fontWeight: '700',
+                      color: '#C3729D',
+                    }}
+                  >
                     Contact
                   </button>
-
                 </div>
               </ul>
               <div className="buttons d-flex">
@@ -94,97 +124,86 @@ export default function Navbar() {
                     cursor: 'pointer',
                   }}
                 >
-                  <a href="https://t.me/EWiTAnnounce" target="_blank" rel="noreferrer" style={{ color: '#6c757d' }}>
+                  <a
+                    href="https://t.me/EWiTAnnounce"
+                    target="_blank"
+                    rel="noreferrer"
+                    style={{ color: '#6c757d' }}
+                  >
                     {' '}
                     <FaTelegram size={30} />
                   </a>
                 </div>
-                <button
-                  type="button"
-                  className="btn btn-outline-secondary"
-                  data-bs-toggle="modal"
-                  data-bs-target="#exampleModal"
-                >
-                  Register
-                </button>
+                {userInfo ? (
+                  <>
+                    <NavDropdown
+                      title={`${userInfo.name}`}
+                      id="collasible-nav-dropdown"
+                    >
+                      <NavDropdown.Divider />
+                      <NavDropdown.Item onClick={logoutHandler}>
+                        Logout
+                      </NavDropdown.Item>
+                    </NavDropdown>
+                  </>
+                ) : (
+                  <Button variant="outline-secondary" onClick={handleShow}>
+                    LOGIN
+                  </Button>
+                )}
               </div>
             </div>
           </div>
-
         </nav>
         {/* MODAL */}
-        <div
-          className="modal fade"
-          id="exampleModal"
-          tabIndex="-1"
-          aria-labelledby="exampleModalLabel"
-          aria-hidden="true"
+        <div className="modal-parent">
+          <div
+            className="modal fade"
+            id="staticBackdrop"
+            data-bs-backdrop="static"
+            data-bs-keyboard="false"
+            tabIndex="-1"
+            aria-labelledby="staticBackdropLabel"
+            aria-hidden="true"
+          >
+            <div className="modal-dialog">
+              <div className="modal-content">
+                <div className="modal-header">
+                  <h5
+                    className="modal-title ms-auto"
+                    id="exampleModalLabel"
+                    style={{ color: '#white' }}
+                  >
+                    Contact Us
+                  </h5>
+                  <button
+                    type="button"
+                    className="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div className="modal-body">
+                  <ContactUs />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* REACT MODAL */}
+        <Modal
+          show={show}
+          onHide={handleClose}
+          backdrop="static"
+          keyboard={false}
         >
-          <div className="modal-dialog modal-dialog-centered">
-            <div className="modal-content">
-              <div className="modal-header">
-                <h5 className="modal-title ms-auto" id="exampleModalLabel" style={{ color: '#fff' }}>
-                  Registration Form
-                </h5>
-                <button
-                  type="button"
-                  className="btn-close"
-                  data-bs-dismiss="modal"
-                  aria-label="Close"
-                ></button>
-              </div>
-              <div className="modal-body"><RegisterContent /></div>
-            </div>
-          </div>
-        </div>
-        {/* MODAL 2 */}
-        <div className="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabIndex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-          <div className="modal-dialog">
-            <div className="modal-content">
-              <div className="modal-header">
-                <h5 className="modal-title ms-auto" id="exampleModalLabel" style={{ color: '#white' }}>
-                  Contact Us
-                </h5>
-                <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div className="modal-body">
-                <ContactUs />
-              </div>
-            </div>
-          </div>
-        </div>
-        {/* MODAL 3 */}
-        <div className="modal fade" id="registerModal" data-bs-backdrop="static" data-bs-keyboard="false" tabIndex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-          <div className="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-            <div className="modal-content">
-              <div className="modal-header">
-                <h5 className="modal-title ms-auto" id="exampleModalLabel" style={{ color: '#white' }}>
-                  Sing Up
-                </h5>
-                <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div className="modal-body">
-                <UserProfileRegister />
-              </div>
-            </div>
-          </div>
-        </div>
-        {/* MODAL 4 */}
-        <div className="modal fade" id="loginModal" data-bs-backdrop="static" data-bs-keyboard="false" tabIndex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-          <div className="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-            <div className="modal-content">
-              <div className="modal-header">
-                <h5 className="modal-title ms-auto" id="exampleModalLabel" style={{ color: '#white' }}>
-                  LOGIN
-                </h5>
-                <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div className="modal-body">
-                <UserProfileLogin />
-              </div>
-            </div>
-          </div>
-        </div>
+          <Modal.Header closeButton>
+            <Modal.Title>Modal title</Modal.Title>
+          </Modal.Header>
+          <Modal.Body>
+            <UserProfileLogin />
+          </Modal.Body>
+        </Modal>
       </section>
     </div>
   )

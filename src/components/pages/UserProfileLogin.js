@@ -1,12 +1,14 @@
 import React, { useEffect, useState } from "react";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
-import Error from "../Error";
 import { useDispatch, useSelector } from "react-redux";
 import { login } from "../../actions/userActions";
+import Error from "../Error";
+import { useNavigate } from 'react-router-dom'
+import Loading from "../Loading";
 
 
-function UserProfileLogin({ history }) {
+const UserProfileLogin = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   // const [error, setError] = useState(false);
@@ -14,18 +16,23 @@ function UserProfileLogin({ history }) {
   const dispatch = useDispatch();
   const userLogin = useSelector((state) => state.userLogin);
   const { loading, error, userInfo } = userLogin;
+  let navigate = useNavigate()
 
   useEffect(() => {
-    if (userInfo) {
-      history.push("/courses")
+    console.log(userLogin.userInfo)
+    if (userLogin.userInfo) {
+      navigate('/courses')
+      // window.location.reload()
     }
-  }, [history, userInfo]);
+  }, [userLogin.userInfo]);
+
 
   const submitHandler = async (e) => {
     e.preventDefault();
     dispatch(login(email, password));
 
     // console.log(email, password)
+
 
     // try {
     //   const config = {
@@ -54,9 +61,13 @@ function UserProfileLogin({ history }) {
 
   };
 
+
+
+
   return (
     <div>
       {error && <Error>{error}</Error>}
+      {loading && <Loading />}
       <Form onSubmit={submitHandler}>
         <Form.Group className="mb-3" controlId="formBasicEmail">
           <Form.Label>Email address</Form.Label>
@@ -65,6 +76,7 @@ function UserProfileLogin({ history }) {
             placeholder="Enter email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
+            required
           />
         </Form.Group>
         <Form.Group className="mb-3" controlId="formBasicPassword">
@@ -74,6 +86,7 @@ function UserProfileLogin({ history }) {
             placeholder="Password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
+            required
           />
         </Form.Group>
         <Button variant="light" type="submit">

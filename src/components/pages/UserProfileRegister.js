@@ -1,8 +1,10 @@
-import React, { useState } from 'react'
-import Button from 'react-bootstrap/Button'
+import React, { useState, useEffect } from 'react'
 import Form from 'react-bootstrap/Form'
-import axios from 'axios'
+import { useDispatch, useSelector } from 'react-redux'
 import Error from '../Error'
+import { useNavigate } from 'react-router-dom'
+import { register } from '../../actions/userActions'
+import { Button } from 'react-bootstrap'
 
 export default function UserProfileRegister() {
   const [name, setName] = useState('')
@@ -14,45 +16,60 @@ export default function UserProfileRegister() {
   )
   const [picMessage, setPicMessage] = useState(null)
   const [message, setMessage] = useState(null)
-  const [error, setError] = useState(false)
+  const [show, setShow] = useState(false)
+  const handleClose = () => setShow(false)
+  const handleShow = () => setShow(true)
+
+
+  // const [error, setError] = useState(false)
+  const dispatch = useDispatch()
+  const userRegister = useSelector((state) => state.userRegister)
+  const { loading, error, userInfo } = userRegister
+  let navigate = useNavigate()
+
+  useEffect(() => {
+    console.log(userRegister.userInfo)
+    if (userRegister.userInfo) {
+      navigate('/courses')
+    }
+  }, [userRegister.userInfo])
 
   const submitHandler = async (e) => {
     e.preventDefault()
-    // console.log(name, email, password, confirmPass, pic)
+    dispatch(register(name, email, password, pic))
 
-    if (password !== confirmPass) {
-      setMessage('passwords do not match')
-    } else {
-      setMessage(null)
-    }
-    try {
-      const config = {
-        headers: {
-          'Content-type': 'application/json',
-        },
-      }
+    //   console.log(name, email, password, confirmPass, pic)
 
-      const { data } = await axios.post(
-        'http://localhost:5000/user',
-        {
-          name,
-          email,
-          password,
-          pic,
-        },
-        config,
-      )
-      console.log(data)
+    //   if (password !== confirmPass) {
+    //     setMessage('passwords do not match')
+    //   } else {
+    //     setMessage(null)
+    //   }
+    //   try {
+    //     const config = {
+    //       headers: {
+    //         'Content-type': 'application/json',
+    //       },
+    //     }
 
-      localStorage.setItem('userInfo', JSON.stringify(data))
-    } catch (error) {
-      setError(error.response.data)
-      console.log(error)
-    }
+    //     const { data } = await axios.post(
+    //       'http://localhost:5000/user',
+    //       {
+    //         name,
+    //         email,
+    //         password,
+    //         pic,
+    //       },
+    //       config,
+    //     )
+    //     console.log(data)
+
+    //     localStorage.setItem('userInfo', JSON.stringify(data))
+    //   } catch (error) {
+    //     setError(error.response.data)
+    //     console.log(error)
+    //   }
   }
-
-
-
 
   return (
     <div>
@@ -66,6 +83,7 @@ export default function UserProfileRegister() {
             placeholder="Enter your full name"
             value={name}
             onChange={(e) => setName(e.target.value)}
+            required
           />
         </Form.Group>
         <Form.Group
@@ -73,6 +91,7 @@ export default function UserProfileRegister() {
           controlId="formBasicEmail"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
+          required
         >
           <Form.Label>Email address</Form.Label>
           <Form.Control type="email" placeholder="Enter email" />
@@ -82,6 +101,7 @@ export default function UserProfileRegister() {
           controlId="formBasicPassword"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
+          required
         >
           <Form.Label>Password</Form.Label>
           <Form.Control type="password" placeholder="Password" />
@@ -91,6 +111,7 @@ export default function UserProfileRegister() {
           controlId="formBasicConfirmPassword"
           value={confirmPass}
           onChange={(e) => setConfirmPass(e.target.value)}
+          required
         >
           <Form.Label>Confirm Password</Form.Label>
           <Form.Control type="password" placeholder="Confirm Password" />
@@ -100,6 +121,7 @@ export default function UserProfileRegister() {
           className="mb-3"
           value={pic}
           onChange={(e) => setPic(e.target.value)}
+          required
         >
           <Form.Label>Uplaod your profile</Form.Label>
           <Form.Control type="file" />
@@ -114,23 +136,7 @@ export default function UserProfileRegister() {
           marginTop: '0px',
           cursor: 'default',
         }}
-      >
-        <button
-          type="button"
-          className="btn bg-transparent"
-          data-bs-toggle="modal"
-          data-bs-target="#loginModal"
-          style={{
-            marginLeft: '0px',
-            marginTop: '10px',
-            fontFamily: 'Futura Lt BT',
-            fontWeight: '700',
-            color: '#fff',
-          }}
-        >
-          Already have an account go to login page
-        </button>
-      </div>
+      ></div>
     </div>
   )
 }

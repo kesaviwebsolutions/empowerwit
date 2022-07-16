@@ -1,11 +1,23 @@
-import React from "react";
+import React, { useEffect } from "react";
 import img9 from "./images/img9.png";
 import "./courses.css";
 import RegisterContent from "./RegisterContent";
 import { FaTelegram } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import { logout } from '../actions/userActions'
+import { useDispatch, useSelector } from "react-redux";
+import { NavDropdown, Nav } from "react-bootstrap"
 
 export default function NavCourse() {
+  const dispatch = useDispatch();
+
+  const userLogin = useSelector((state) => state.userLogin);
+  const { userInfo } = userLogin;
+  const logoutHandler = () => {
+    dispatch(logout());
+  };
+
+  useEffect(() => { }, [userInfo]);
   return (
     <div>
       <section>
@@ -53,8 +65,19 @@ export default function NavCourse() {
                   </Link>
                 </li>
               </ul>
-
-              <div className="buttons d-flex">
+              {userInfo ? (
+                <>
+                  <NavDropdown
+                    title={`${userInfo.name}`}
+                    id="collasible-nav-dropdown"
+                  >
+                    <NavDropdown.Divider />
+                    <NavDropdown.Item onClick={logoutHandler}>
+                      Logout
+                    </NavDropdown.Item>
+                  </NavDropdown>
+                </>
+              ) : <div className="buttons d-flex">
                 <div
                   className="btn-sign"
                   style={{
@@ -82,6 +105,9 @@ export default function NavCourse() {
                   Register
                 </button>
               </div>
+              }
+
+
             </div>
           </div>
         </nav>

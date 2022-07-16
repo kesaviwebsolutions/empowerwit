@@ -5,6 +5,7 @@
   "dependencies": {
     "@babel/runtime": "^7.18.3",
     "@popperjs/core": "^2.11.5",
+    "@reduxjs/toolkit": "^1.8.3",
     "@sanity/client": "^3.3.0",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.2.0",

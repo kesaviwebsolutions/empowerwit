@@ -1,5 +1,6 @@
 const User = require("../models/userModel");
 const asyncHandler = require("express-async-handler");
+const generateToken = require("../utils/generatetoken");
 
 
 const registerUser = asyncHandler(async (req, res) => {
@@ -17,6 +18,7 @@ const registerUser = asyncHandler(async (req, res) => {
         email,
         password,
         pic,
+
     });
 
     if (user) {
@@ -25,6 +27,7 @@ const registerUser = asyncHandler(async (req, res) => {
             name: user.name,
             email: user.email,
             pic: user.pic,
+            token: generateToken(user._id),
         })
     } else {
         throw new Error('Something went wrong!')
@@ -41,6 +44,7 @@ const loginUser = asyncHandler(async (req, res) => {
             name: user.name,
             email: user.email,
             pic: user.pic,
+            token: generateToken(user._id)
         })
     } else {
         throw new Error('Invalid Email or Password!')

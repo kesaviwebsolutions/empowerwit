@@ -33,12 +33,13 @@
   font-family: 'Futura Lt BT';
   font-weight: 700;
 }
-
+/* .modal-backdrop.show {
+  opacity: -0.5 !important;
+} */
 .background {
   background-image: url('./components/images/ewit_background3.png');
   background-repeat: no-repeat;
   background-size: cover;
-
 }
 li.nav-item {
   margin-left: 50px;
@@ -51,18 +52,16 @@ li.nav-item {
   padding: 1rem;
   background-image: linear-gradient(#edcee3, #c3729d);
 }
-.modal-header{
+.modal-header {
   background-image: linear-gradient(#edcee3, #c3729d);
   color: white;
-
 }
-label.form-label{
+label.form-label {
   color: white;
 }
-.form-check{
+.form-check {
   color: white;
 }
-
 
 /* HERO */
 .hero-img {
@@ -285,7 +284,6 @@ img.fl {
   display: block;
   margin: 20px auto;
   padding: 10px 0px;
-  
 }
 
 li.LI {
