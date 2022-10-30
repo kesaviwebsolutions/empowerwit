@@ -1,12 +1,12 @@
-import React, { useState } from 'react'
-import Button from 'react-bootstrap/Button'
-import Modal from 'react-bootstrap/Modal'
-import UserProfileRegister from './pages/UserProfileRegister'
+import React, { useState } from "react";
+import Button from "react-bootstrap/Button";
+import Modal from "react-bootstrap/Modal";
+import UserProfileRegister from "./pages/UserProfileRegister";
 
 export default function RegisterModal() {
-  const [show, setShow] = useState(false)
-  const handleClose = () => setShow(false)
-  const handleShow = () => setShow(true)
+  const [show, setShow] = useState(false);
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
 
   return (
     <>
@@ -21,7 +21,7 @@ export default function RegisterModal() {
         keyboard={false}
       >
         <Modal.Header closeButton>
-          <Modal.Title>Modal title</Modal.Title>
+          <Modal.Title>Login</Modal.Title>
         </Modal.Header>
         <Modal.Body>
           <UserProfileRegister />
@@ -34,5 +34,5 @@ export default function RegisterModal() {
         </Modal.Footer>
       </Modal>
     </>
-  )
+  );
 }

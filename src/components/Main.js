@@ -27,7 +27,7 @@ export default function Main() {
           keyboard={false}
         >
           <Modal.Header closeButton>
-            <Modal.Title>Modal title</Modal.Title>
+            <Modal.Title>Registration</Modal.Title>
           </Modal.Header>
           <Modal.Body>
             <UserProfileRegister />

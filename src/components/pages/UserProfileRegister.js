@@ -1,42 +1,41 @@
-import React, { useState, useEffect } from 'react'
-import Form from 'react-bootstrap/Form'
-import { useDispatch, useSelector } from 'react-redux'
-import Error from '../Error'
-import { useNavigate } from 'react-router-dom'
-import { register } from '../../actions/userActions'
-import { Button } from 'react-bootstrap'
+import React, { useState, useEffect } from "react";
+import Form from "react-bootstrap/Form";
+import { useDispatch, useSelector } from "react-redux";
+import Error from "../Error";
+import { useNavigate } from "react-router-dom";
+import { register } from "../../actions/userActions";
+import { Button } from "react-bootstrap";
 
 export default function UserProfileRegister() {
-  const [name, setName] = useState('')
-  const [email, setEmail] = useState('')
-  const [password, setPassword] = useState('')
-  const [confirmPass, setConfirmPass] = useState('')
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [confirmPass, setConfirmPass] = useState("");
   const [pic, setPic] = useState(
-    'https://t3.ftcdn.net/jpg/03/46/83/96/360_F_346839683_6nAPzbhpSkIpb8pmAwufkC7c5eD7wYws.jpg',
-  )
-  const [picMessage, setPicMessage] = useState(null)
-  const [message, setMessage] = useState(null)
-  const [show, setShow] = useState(false)
-  const handleClose = () => setShow(false)
-  const handleShow = () => setShow(true)
-
+    "https://t3.ftcdn.net/jpg/03/46/83/96/360_F_346839683_6nAPzbhpSkIpb8pmAwufkC7c5eD7wYws.jpg"
+  );
+  const [picMessage, setPicMessage] = useState(null);
+  const [message, setMessage] = useState(null);
+  const [show, setShow] = useState(false);
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
 
   // const [error, setError] = useState(false)
-  const dispatch = useDispatch()
-  const userRegister = useSelector((state) => state.userRegister)
-  const { loading, error, userInfo } = userRegister
-  let navigate = useNavigate()
+  const dispatch = useDispatch();
+  const userRegister = useSelector((state) => state.userRegister);
+  const { loading, error, userInfo } = userRegister;
+  let navigate = useNavigate();
 
   useEffect(() => {
-    console.log(userRegister.userInfo)
+    console.log(userRegister.userInfo);
     if (userRegister.userInfo) {
-      navigate('/courses')
+      navigate("/courses");
     }
-  }, [userRegister.userInfo])
+  }, [userRegister.userInfo]);
 
   const submitHandler = async (e) => {
-    e.preventDefault()
-    dispatch(register(name, email, password, pic))
+    e.preventDefault();
+    dispatch(register(name, email, password, pic));
 
     //   console.log(name, email, password, confirmPass, pic)
 
@@ -69,7 +68,7 @@ export default function UserProfileRegister() {
     //     setError(error.response.data)
     //     console.log(error)
     //   }
-  }
+  };
 
   return (
     <div>
@@ -127,16 +126,16 @@ export default function UserProfileRegister() {
           <Form.Control type="file" />
         </Form.Group>
         <Button variant="light" type="submit">
-          Sing Up
+          Sign Up
         </Button>
       </Form>
       <div
         className="btn-sign"
         style={{
-          marginTop: '0px',
-          cursor: 'default',
+          marginTop: "0px",
+          cursor: "default",
         }}
       ></div>
     </div>
-  )
+  );
 }
